@@ -1,0 +1,30 @@
+﻿// ----------------------------------------------------------------------------------------------------------------------
+// Copyright © Ejyle Technologies (P) Ltd (www.ejyle.com)
+// Licensed under the MIT license. See the LICENSE file in the project's root directory for complete license information.
+// ----------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ejyle.DevAccelerate.Core.Configuration
+{
+    public class ExtendedPropertyConfigurationElement : NamedConfigurationElement
+    {
+        [ConfigurationProperty("value", IsRequired = true)]
+        public string Value
+        {
+            get
+            {
+                return this["value"] as string;
+            }
+            set
+            {
+                this["value"] = value;
+            }
+        }
+    }
+}
