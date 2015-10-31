@@ -11,8 +11,10 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core
 {
+    /// <summary>
+    /// An empty class to which extensions can be added by anyone and then access them through the Extensions property of the <see cref="DaApplicationContext"/> static class.
+    /// </summary>
     public class DaApplicationContextExtensions
     {
-
     }
 }

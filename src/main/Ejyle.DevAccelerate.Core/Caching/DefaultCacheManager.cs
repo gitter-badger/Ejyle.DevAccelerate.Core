@@ -13,32 +13,46 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Caching
 {
+    /// <summary>
+    /// Represents the in-memory cache implementation of the <see cref="ICacheManager"/> interface.
+    /// </summary>
     public class DefaultCacheManager : ICacheManager
     {
         ObjectCache cache = null;
         CacheItemPolicy policy = null;
 
+        /// <summary>
+        /// Initializes an instance of the <see cref="DefaultCacheManager"/> class.
+        /// </summary>
         public DefaultCacheManager()
         {
             cache = MemoryCache.Default;
             policy = new CacheItemPolicy();
         }
 
-        public CachingConfigurationSection GetSettings()
+        /// <summary>
+        /// Inserts a cache entiry into the cache.
+        /// </summary>
+        /// <param name="key">A unique identifier for the cache entry.</param>
+        /// <param name="value">The object to insert into the cache.</param>
+        public void Add(string key, object value)
         {
-            throw new NotImplementedException();
+            cache.Set(key, value, policy);
         }
 
-        public void Add(string key, object data)
-        {
-            cache.Set(key, data, policy);
-        }
-
+        /// <summary>
+        /// Gets a cache entry with a given key from the cache.
+        /// </summary>
+        /// <param name="key">The unique identifier for the cache entry to retrieve.</param>
+        /// <returns>Returns the cache entry as an <see cref="object"/> type.</returns>
         public object GetData(string key)
         {
             return cache[key] as string;
         }
 
+        /// <summary>
+        /// Gets the number of entires in the cache.
+        /// </summary>
         public long Count
         {
             get
@@ -47,11 +61,19 @@ namespace Ejyle.DevAccelerate.Core.Caching
             }
         }
 
+        /// <summary>
+        /// Clears the cache. This method is not currently implemented.
+        /// </summary>
         public void Flush()
         {
-            // Ignore
+            throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Checks if cache entry with a given key already exists in the cache.
+        /// </summary>
+        /// <param name="key">The unique identifier for the cache entry.</param>
+        /// <returns>Returns True if the cache entry exists; otherwise False.</returns>
         public bool Contains(string key)
         {
             return cache.Contains(key);

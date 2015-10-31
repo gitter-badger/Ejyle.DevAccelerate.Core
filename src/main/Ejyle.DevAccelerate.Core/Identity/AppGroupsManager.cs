@@ -38,27 +38,25 @@ namespace Ejyle.DevAccelerate.Core.Identity
         {
             return Repository.FindAllAsync();
         }
-        public Task<TEntity> FindByIdAsync(TKey Id)
-        {
-            return Repository.FindByIdAsync(Id);
-        }
-
+        
         public Task CreateAppMappingAsync(AppMapping obj)
         {
             return Repository.CreateAppMappingAsync(obj);
         }
+
         public Task RemoveAppMappingAsync(AppMapping obj)
         {
             return Repository.RemoveAppMappingAsync(obj);
         }
+
         public Task<List<AppMapping>> FindAllAppMappingAsync()
         {
             return Repository.FindAllAppMappingAsync();
         }
+
         public Task<List<AppMapping>> FindAppMappingByGroupIdAsync(string Id)
         {
             return Repository.FindAppMappingByGroupIdAsync(Id);
-        }
-        
+        }       
     }
 }

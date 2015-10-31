@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\bin\Ejyle.DevAccelerate.Core.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -75,7 +76,6 @@
     <Compile Include="DaApplicationContextExtensions.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="EntityManagerBase.cs" />
-    <Compile Include="EntityRepositoryBase.cs" />
     <Compile Include="Exceptions\DefaultExceptionManager.cs" />
     <Compile Include="Exceptions\IExceptionManager.cs" />
     <Compile Include="Files\DefaultUploadedFile.cs" />
@@ -190,7 +190,6 @@
     <Compile Include="Identity\UserReportStatus.cs" />
     <Compile Include="Identity\UserType.cs" />
     <Compile Include="IEntity.cs" />
-    <Compile Include="IEntityManager.cs" />
     <Compile Include="IEntityRepository.cs" />
     <Compile Include="Lists\Country.cs" />
     <Compile Include="Lists\CountryManager.cs" />

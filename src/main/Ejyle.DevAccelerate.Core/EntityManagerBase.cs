@@ -3,30 +3,24 @@
 // Licensed under the MIT license. See the LICENSE file in the project's root directory for complete license information.
 // ----------------------------------------------------------------------------------------------------------------------
 
-using Ejyle.DevAccelerate.Core.Configuration;
-using Ejyle.DevAccelerate.Core.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ejyle.DevAccelerate.Core.Configuration;
+using Ejyle.DevAccelerate.Core.Logging;
 
 namespace Ejyle.DevAccelerate.Core
 {
-    public abstract class EntityManagerBase<TEntity, TRepository> : EntityManagerBase<string, string, TEntity, TRepository>
-        where TEntity : IEntity<string, string>
-        where TRepository : IEntityRepository<string, string, TEntity>
-    {
-        #region Constructors
-
-        protected EntityManagerBase(TRepository repository)
-            : base(repository)
-        { }
-
-        #endregion Constructors
-    }
-
-    public abstract class EntityManagerBase<TKey, TOptionalKey, TEntity, TRepository> : IEntityManager<TKey, TOptionalKey, TEntity, TRepository>
+    /// <summary>
+    /// Represents the APIs for entity management and uses the entity repository internally.
+    /// </summary>
+    /// <typeparam name="TKey">The type of the keys in the manager.</typeparam>
+    /// <typeparam name="TOptionalKey">The type of the optional keys in the manager.</typeparam>
+    /// <typeparam name="TEntity">The type of the entity in the manager.</typeparam>
+    /// <typeparam name="TRepository">The type of the entity repository.</typeparam>
+    public abstract class EntityManagerBase<TKey, TOptionalKey, TEntity, TRepository>
         where TEntity : IEntity<TKey, TOptionalKey>
         where TRepository : IEntityRepository<TKey, TOptionalKey, TEntity>
     {
@@ -38,6 +32,10 @@ namespace Ejyle.DevAccelerate.Core
 
         #region Constructors
 
+        /// <summary>
+        /// Initializes an instance of the <see cref="EntityManagerBase{TKey, TOptionalKey, TEntity, TRepository}"/> class.
+        /// </summary>
+        /// <param name="repository">The repository responsible for commiting changes.</param>
         protected EntityManagerBase(TRepository repository)
         {
             if (repository == null)
@@ -52,6 +50,9 @@ namespace Ejyle.DevAccelerate.Core
 
         #region Properties
 
+        /// <summary>
+        /// Gets the repository responsible for commiting changes.
+        /// </summary>
         public TRepository Repository
         {
             get
@@ -64,25 +65,46 @@ namespace Ejyle.DevAccelerate.Core
 
         #region Virtual Methods
 
-        public virtual Task CreateAsync(TEntity obj)
+        /// <summary>
+        /// Asynchronously creates a new entity.
+        /// </summary>
+        /// <param name="entity">The entity to create.</param>
+        /// <returns>The task representing the asynchronous operation.</returns>
+        public virtual Task CreateAsync(TEntity entity)
         {
-            return Repository.CreateAsync(obj);
+            return Repository.CreateAsync(entity);
         }
 
-        public virtual Task DeleteAsync(TEntity obj)
+        /// <summary>
+        /// Asynchronously deletes an entity.
+        /// </summary>
+        /// <param name="entity">The entity to delete.</param>
+        /// <returns>The task representing the asynchronous operation.</returns>
+        public virtual Task DeleteAsync(TEntity entity)
         {
-            return Repository.DeleteAsync(obj);
+            return Repository.DeleteAsync(entity);
         }
 
-        public virtual Task UpdateAsync(TEntity obj)
+        /// <summary>
+        /// Asynchronously updates a entity type.
+        /// </summary>
+        /// <param name="entity">The entity to update.</param>
+        /// <returns>The task representing the asynchronous operation.</returns>
+        public virtual Task UpdateAsync(TEntity entity)
         {
-            return Repository.UpdateAsync(obj);
+            return Repository.UpdateAsync(entity);
         }
 
+        /// <summary>
+        /// Asynchronously finds an entity by ID.
+        /// </summary>
+        /// <param name="id">The entity ID.</param>
+        /// <returns>The task representing the asynchronous operation.</returns>
         public virtual Task<TEntity> FindByIdAsync(TKey id)
         {
             return Repository.FindByIdAsync(id);
         } 
+
         #endregion Virtual Methods
     }
 }

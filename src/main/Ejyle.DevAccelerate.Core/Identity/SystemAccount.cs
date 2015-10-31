@@ -27,9 +27,9 @@ namespace Ejyle.DevAccelerate.Core.Identity
         {
             Id = Guid.NewGuid().ToString();
             CreatedBy = null;
-            CreatedDate = DateTime.Now;
+            CreatedDateUtc = DateTime.Now;
             LastUpdatedBy = null;
-            LastUpdatedDate = DateTime.Now;
+            LastUpdatedDateUtc = DateTime.Now;
         }
     }
 

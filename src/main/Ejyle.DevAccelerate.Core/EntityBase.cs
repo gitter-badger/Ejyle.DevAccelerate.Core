@@ -8,8 +8,14 @@ using System.Collections.Generic;
 
 namespace Ejyle.DevAccelerate.Core
 {
+    /// <summary>
+    /// Represents the base class for an entity.
+    /// </summary>
     public abstract class EntityBase : EntityBase<string, string>
     {
+        /// <summary>
+        /// Creates an instance of the <see cref="EntityBase"/> class.
+        /// </summary>
         protected EntityBase()
             : base()
         { }
@@ -21,7 +27,7 @@ namespace Ejyle.DevAccelerate.Core
     public abstract class EntityBase<TKey, TOptionalKey> : IEntity<TKey, TOptionalKey>
     {
         /// <summary>
-        /// Creates an instance of the <see cref="EntityBase"/> class.
+        /// Creates an instance of the <see cref="EntityBase<TKey, TOptionalKey>"/> class.
         /// </summary>
         protected EntityBase()
         { }
@@ -47,7 +53,7 @@ namespace Ejyle.DevAccelerate.Core
         /// <summary>
         /// Gets or sets the created date of the object.
         /// </summary>
-        public DateTime CreatedDate
+        public DateTime CreatedDateUtc
         {
             get;
             set;
@@ -65,7 +71,7 @@ namespace Ejyle.DevAccelerate.Core
         /// <summary>
         /// Gets or sets the last updated date of the object.
         /// </summary>
-        public DateTime LastUpdatedDate
+        public DateTime LastUpdatedDateUtc
         {
             get;
             set;

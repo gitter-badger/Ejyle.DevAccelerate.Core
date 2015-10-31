@@ -8,12 +8,12 @@ using System;
 namespace Ejyle.DevAccelerate.Core
 {
     /// <summary>
-    /// Represents the base class for an entity.
+    /// Defines the properties for an entity.
     /// </summary>
     public interface IEntity<TKey, TOptionalKey>
     {
         /// <summary>
-        /// Gets or sets the Id of the object.
+        /// Gets or sets the unique identifier of the entity.
         /// </summary>
         TKey Id
         {
@@ -22,7 +22,7 @@ namespace Ejyle.DevAccelerate.Core
         }
 
         /// <summary>
-        /// Gets or sets the ID of the user who created the object.
+        /// Gets or sets the ID of the user who created the entity.
         /// </summary>
         TKey CreatedBy
         {
@@ -31,16 +31,16 @@ namespace Ejyle.DevAccelerate.Core
         }
 
         /// <summary>
-        /// Gets or sets the created date of the object.
+        /// Gets or sets the created date (UTC) of the entity.
         /// </summary>
-        DateTime CreatedDate
+        DateTime CreatedDateUtc
         {
             get;
             set;
         }
 
         /// <summary>
-        /// Gets or sets the ID of the user who last updated the object.
+        /// Gets or sets the ID of the user who last updated the entity.
         /// </summary>
         TKey LastUpdatedBy
         {
@@ -49,9 +49,9 @@ namespace Ejyle.DevAccelerate.Core
         }
 
         /// <summary>
-        /// Gets or sets the last updated date of the object.
+        /// Gets or sets the last updated date (UTC) of the entity.
         /// </summary>
-        DateTime LastUpdatedDate
+        DateTime LastUpdatedDateUtc
         {
             get;
             set;

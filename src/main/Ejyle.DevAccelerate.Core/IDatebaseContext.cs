@@ -12,8 +12,14 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core
 {
+    /// <summary>
+    /// Defines the properties and methods for database context management.
+    /// </summary>
     public interface IDatebaseContext : IDisposable
     {
+        /// <summary>
+        /// Gets or sets the connection string of the database.
+        /// </summary>
         string ConnectionString { get; set; }
     }
 }
