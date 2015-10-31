@@ -12,8 +12,15 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents the configuration section for all the databases in the application.
+    /// </summary>
     public class DatabaseConfigurationSection : DaConfigurationSection
     {
+        /// <summary>
+        /// Gets or sets default database of the application.
+        /// </summary>
+        /// <remarks>The name of the configuration property is defaultDatabase.</remarks>
         [ConfigurationProperty("defaultDatabase", IsRequired=false, DefaultValue="DevAccelerateConnection")]
         public string DefaultDatabase
         {
@@ -27,6 +34,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets all the databases in the database configuration section.
+        /// </summary>
+        /// <remarks>The name of the configuration property is databases.</remarks>
         [ConfigurationProperty("databases")]
         public DatabaseConfigurationElementCollection Databases
         {
@@ -40,11 +51,19 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Returns daDatabaseConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daDatabaseConfiguration";
         }
 
+        /// <summary>
+        /// Gets the configuration information about the default database.
+        /// </summary>
+        /// <returns>Returns an instance of the <see cref="DatabaseConfigurationElement"/> class.</returns>
         public DatabaseConfigurationElement GetDefaultDatabaseConfiguration()
         {
             return Databases.GetByName(DefaultDatabase);

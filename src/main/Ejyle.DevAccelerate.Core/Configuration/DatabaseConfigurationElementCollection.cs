@@ -12,10 +12,13 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Contains a collections of the <see cref="DatabaseConfigurationElement"/> objects.
+    /// </summary>
     public class DatabaseConfigurationElementCollection : NamedConfigurationElementCollection<DatabaseConfigurationElement>
     {
         /// <summary>
-        /// Creates a new instance of the <see cref="DatabaseConfigurationElement"/> configuration class.
+        /// creates a new <see cref="ConfigurationElement" />.
         /// </summary>
         /// <returns>Returns an instance of the <see cref="DatabaseConfigurationElement"/> class.</returns>
         protected override ConfigurationElement CreateNewElement()

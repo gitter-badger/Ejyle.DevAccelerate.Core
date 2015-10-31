@@ -12,8 +12,15 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents the configuration section for caching.
+    /// </summary>
     public class CachingConfigurationSection : ProviderConfigurationSection
     {
+        /// <summary>
+        /// Returns daCachingConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daCachingConfiguration";

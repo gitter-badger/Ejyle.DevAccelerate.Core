@@ -49,7 +49,6 @@
     <Compile Include="Caching\DefaultCacheManager.cs" />
     <Compile Include="Caching\ICacheManager.cs" />
     <Compile Include="Configuration\CachingConfigurationSection.cs" />
-    <Compile Include="Configuration\ConfigurationSourceFactory.cs" />
     <Compile Include="Configuration\DaApplicationConfigurationSection.cs" />
     <Compile Include="Configuration\DaConfigurationSection.cs" />
     <Compile Include="Configuration\DatabaseConfigurationElement.cs" />
@@ -95,14 +94,6 @@
     <Compile Include="Files\IFileTypeRepository.cs" />
     <Compile Include="Files\IUploadedFile.cs" />
     <Compile Include="Files\PathType.cs" />
-    <Compile Include="Hooks\IServiceHook.cs" />
-    <Compile Include="Hooks\IServiceHookEvent.cs" />
-    <Compile Include="Hooks\IServiceHookEventRepository.cs" />
-    <Compile Include="Hooks\IServiceHookRepository.cs" />
-    <Compile Include="Hooks\ServiceHook.cs" />
-    <Compile Include="Hooks\ServiceHookEvent.cs" />
-    <Compile Include="Hooks\ServiceHookEventManager.cs" />
-    <Compile Include="Hooks\ServiceHookManager.cs" />
     <Compile Include="IDatebaseContext.cs" />
     <Compile Include="Identity\AccountStatus.cs" />
     <Compile Include="Identity\Address.cs" />
@@ -234,21 +225,7 @@
     <Compile Include="Mail\MailSubjectParam.cs" />
     <Compile Include="Mail\MailTemplate.cs" />
     <Compile Include="Mail\MailTemplateManager.cs" />
-    <Compile Include="Notifications\INotificationEvent.cs" />
-    <Compile Include="Notifications\INotificationPreference.cs" />
-    <Compile Include="Notifications\INotificationPreferenceRepository.cs" />
-    <Compile Include="Notifications\NotificationChannel.cs" />
-    <Compile Include="Notifications\NotificationEvent.cs" />
-    <Compile Include="Notifications\NotificationPreference.cs" />
-    <Compile Include="Notifications\NotificationPreferenceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tasks\ITask.cs" />
-    <Compile Include="Tasks\TaskBase.cs" />
-    <Compile Include="Tasks\TaskResult.cs" />
-    <Compile Include="Utilities\Validation\IValidationResult.cs" />
-    <Compile Include="Utilities\Validation\IValidator.cs" />
-    <Compile Include="Utilities\Validation\ValidationResult.cs" />
-    <Compile Include="Utilities\Validation\ValidationResultBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="da.ico" />
