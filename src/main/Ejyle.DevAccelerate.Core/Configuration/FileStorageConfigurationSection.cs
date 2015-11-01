@@ -12,8 +12,15 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents the configuration section for file storage providers in the application.
+    /// </summary>
     public class FileStorageConfigurationSection : ProviderConfigurationSection
     {
+        /// <summary>
+        /// Returns daFileStorageConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daFileStorageConfiguration";

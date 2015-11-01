@@ -11,8 +11,15 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents the configuration section for logging management in the application.
+    /// </summary>
     public class LoggingConfigurationSection : ProviderConfigurationSection
     {
+        /// <summary>
+        /// Returns daLoggingConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the confiuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daLoggingConfiguration";

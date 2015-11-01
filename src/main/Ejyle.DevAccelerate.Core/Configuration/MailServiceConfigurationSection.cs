@@ -9,10 +9,14 @@ using System.Configuration;
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
     /// <summary>
-    /// Represents the configuration section for an email service provider.
+    /// Represents the configuration section for mail management in the application.
     /// </summary>
     public class MailServiceConfigurationSection : DaConfigurationSection
     {
+        /// <summary>
+        /// Returns daMailServiceConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the confiuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daMailServiceConfiguration";
@@ -21,6 +25,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// <summary>
         /// Gets or sets the host of the email service provider.
         /// </summary>
+        /// <remarks>The name of the configuration property is host.</remarks>
         [ConfigurationProperty("host", IsRequired = true)]
         public string Host
         {
@@ -37,6 +42,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// <summary>
         /// Gets or sets the port for an email service provider.
         /// </summary>
+        /// <remarks>The name of the configuration property is port.</remarks>
         [ConfigurationProperty("port", IsRequired = false, DefaultValue=0)]
         public int Port
         {
@@ -51,8 +57,9 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         }
 
         /// <summary>
-        /// Determines if the SSL is used for communicating with the email service provider.
+        /// Determines whether the SSL is used for communicating with the email service provider.
         /// </summary>
+        /// <remarks>The name of the configuration property is useSSL.</remarks>
         [ConfigurationProperty("useSSL", IsRequired = false, DefaultValue = false)]
         public bool UseSSL
         {
@@ -69,6 +76,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// <summary>
         /// Gets or sets the username for the email service provider. 
         /// </summary>
+        /// <remarks>The name of the configuration property is userName.</remarks>
         [ConfigurationProperty("userName", IsRequired = false, DefaultValue=null)]
         public string UserName
         {
@@ -85,6 +93,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// <summary>
         /// Gets or sets the password for the email service provider.
         /// </summary>
+        /// <remarks>The name of the configuration property is password.</remarks>
         [ConfigurationProperty("password", IsRequired = false, DefaultValue=null)]
         public string Password
         {
@@ -101,6 +110,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// <summary>
         /// Determines if mail is to be running in backgroun.
         /// </summary>
+        /// <remarks>The name of the configuration property is sendMailInBackground.</remarks>
         [ConfigurationProperty("sendMailInBackground", IsRequired = false, DefaultValue = false)]
         public bool SendMailInBackground
         {

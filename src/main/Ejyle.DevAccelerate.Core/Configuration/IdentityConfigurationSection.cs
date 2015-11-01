@@ -12,8 +12,15 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents the configuration section for identity management in the application.
+    /// </summary>
     public class IdentityConfigurationSection : DaConfigurationSection
     {
+        /// <summary>
+        /// Gets or sets user token provider type.
+        /// </summary>
+        /// <remarks>The name of the configuration property is userTokenProvider.</remarks>
         [ConfigurationProperty("userTokenProvider", IsRequired = false)]
         public string UserTokenProvider
         {
@@ -27,6 +34,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets the email service type.
+        /// </summary>
+        /// <remarks>The name of the configuration property is emailService.</remarks>
         [ConfigurationProperty("emailService", IsRequired = false)]
         public string EmailService
         {
@@ -40,6 +51,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets the SMS service type.
+        /// </summary>
+        /// <remarks>The name of the configuration property is smsService.</remarks>
         [ConfigurationProperty("smsService", IsRequired = false)]
         public string SMSService
         {
@@ -53,6 +68,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets the two factory policy settings.
+        /// </summary>
+        /// <remarks>The name of the configuration policy is twoFactorPolicy.</remarks>
         [ConfigurationProperty("twoFactorPolicy", IsRequired = false)]
         public IdentityTwoFactorPolicyConfigurationElement TwoFactorPolicy
         {
@@ -66,6 +85,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets the username policy settings.
+        /// </summary>
+        /// <remarks>The name of the configuration property is userNamePolicy.</remarks>
         [ConfigurationProperty("userNamePolicy", IsRequired = false)]
         public IdentityUserNamePolicyConfigurationElement UserNamePolicy
         {
@@ -79,6 +102,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets the password policy settings.
+        /// </summary>
+        /// <remarks>The name of the configuration property is passwordPolicy.</remarks>
         [ConfigurationProperty("passwordPolicy", IsRequired = false)]
         public IdentityPasswordPolicyConfigurationElement PasswordPolicy
         {
@@ -92,6 +119,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Gets or sets user lockout policy settings.
+        /// </summary>
+        /// <remarks>The name of the configuration property is userLockoutPolicy.</remarks>
         [ConfigurationProperty("userLockoutPolicy", IsRequired = false)]
         public IdentityLockoutPolicyConfigurationElement UserLockoutPolicy
         {
@@ -105,6 +136,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Returns daIdentityConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daIdentityConfiguration";

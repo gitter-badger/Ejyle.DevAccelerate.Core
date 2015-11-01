@@ -12,8 +12,15 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents the configuration section for exception handling in the application.
+    /// </summary>
     public class ExceptionHandlingConfigurationSection : ProviderConfigurationSection
     {
+        /// <summary>
+        /// Gets or sets the name of the default exception policy.
+        /// </summary>
+        /// <remarks>The name of the configuration property is defaultExceptionPolicy.</remarks>
         [ConfigurationProperty("defaultExceptionPolicy", IsRequired = false, DefaultValue="Default Exception Policy")]
         public string DefaultExceptionPolicy
         {
@@ -27,6 +34,10 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
+        /// <summary>
+        /// Returns daExceptionHandlingConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()
         {
             return "daExceptionHandlingConfiguration";
