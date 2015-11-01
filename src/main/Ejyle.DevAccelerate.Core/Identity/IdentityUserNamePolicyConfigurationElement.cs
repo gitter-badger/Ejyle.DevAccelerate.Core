@@ -10,9 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejyle.DevAccelerate.Core.Configuration
+namespace Ejyle.DevAccelerate.Core.Identity
 {
-    public class IdentityTwoFactorPolicyConfigurationElement : ConfigurationElement
+    public class IdentityUserNamePolicyConfigurationElement : ConfigurationElement
     {
         [ConfigurationProperty("isEnabled", IsRequired = false, DefaultValue = false)]
         public bool IsEnabled
@@ -27,29 +27,29 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             }
         }
 
-        [ConfigurationProperty("smsTokenProvider", IsRequired = false)]
-        public string SMSTokenProvider
+        [ConfigurationProperty("allowOnlyAlphanumericUserNames", IsRequired = false, DefaultValue = false)]
+        public bool AllowOnlyAlphanumericUserNames
         {
             get
             {
-                return this["smsTokenProvider"] as string;
+                return Convert.ToBoolean(this["allowOnlyAlphanumericUserNames"]);
             }
             set
             {
-                this["smsTokenProvider"] = value;
+                this["allowOnlyAlphanumericUserNames"] = value;
             }
         }
 
-        [ConfigurationProperty("emailTokenProvider", IsRequired = false)]
-        public string EmailTokenProvider
+        [ConfigurationProperty("requireUniqueEmail", IsRequired = false, DefaultValue = true)]
+        public bool RequireUniqueEmail
         {
             get
             {
-                return this["emailTokenProvider"] as string;
+                return Convert.ToBoolean(this["requireUniqueEmail"]);
             }
             set
             {
-                this["emailTokenProvider"] = value;
+                this["requireUniqueEmail"] = value;
             }
         }
     }

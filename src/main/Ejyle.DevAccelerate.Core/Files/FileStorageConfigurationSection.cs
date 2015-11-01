@@ -9,21 +9,22 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ejyle.DevAccelerate.Core.Configuration;
 
-namespace Ejyle.DevAccelerate.Core.Configuration
+namespace Ejyle.DevAccelerate.Core.Files
 {
     /// <summary>
-    /// Contains a collections of the <see cref="DatabaseConfigurationElement"/> objects.
+    /// Represents the configuration section for file storage providers in the application.
     /// </summary>
-    public class DatabaseConfigurationElementCollection : NamedConfigurationElementCollection<DatabaseConfigurationElement>
+    public class FileStorageConfigurationSection : ProviderConfigurationSection
     {
         /// <summary>
-        /// creates a new <see cref="ConfigurationElement" />.
+        /// Returns daFileStorageConfiguration as the name of the configuration section.
         /// </summary>
-        /// <returns>Returns an instance of the <see cref="DatabaseConfigurationElement"/> class.</returns>
-        protected override ConfigurationElement CreateNewElement()
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
+        public override string GetConfigurationSectionName()
         {
-            return new DatabaseConfigurationElement();
+            return "daFileStorageConfiguration";
         }
     }
 }

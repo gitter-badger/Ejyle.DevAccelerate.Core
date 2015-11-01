@@ -9,21 +9,22 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ejyle.DevAccelerate.Core.Configuration;
 
-namespace Ejyle.DevAccelerate.Core.Configuration
+namespace Ejyle.DevAccelerate.Core.Data
 {
     /// <summary>
-    /// Represents the configuration section for caching.
+    /// Contains a collections of the <see cref="DatabaseConfigurationElement"/> objects.
     /// </summary>
-    public class CachingConfigurationSection : ProviderConfigurationSection
+    public class DatabaseConfigurationElementCollection : NamedConfigurationElementCollection<DatabaseConfigurationElement>
     {
         /// <summary>
-        /// Returns daCachingConfiguration as the name of the configuration section.
+        /// creates a new <see cref="ConfigurationElement" />.
         /// </summary>
-        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
-        public override string GetConfigurationSectionName()
+        /// <returns>Returns an instance of the <see cref="DatabaseConfigurationElement"/> class.</returns>
+        protected override ConfigurationElement CreateNewElement()
         {
-            return "daCachingConfiguration";
+            return new DatabaseConfigurationElement();
         }
     }
 }

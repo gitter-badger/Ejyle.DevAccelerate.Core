@@ -9,8 +9,9 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Ejyle.DevAccelerate.Core.Configuration;
 
-namespace Ejyle.DevAccelerate.Core.Configuration
+namespace Ejyle.DevAccelerate.Core.Data
 {
     /// <summary>
     /// Represents the configuration section for all the databases in the application.

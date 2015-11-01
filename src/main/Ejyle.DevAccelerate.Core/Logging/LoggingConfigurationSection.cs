@@ -10,18 +10,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejyle.DevAccelerate.Core.Exceptions
+namespace Ejyle.DevAccelerate.Core.Logging
 {
-    public class DefaultExceptionManager : IExceptionManager
+    /// <summary>
+    /// Represents the configuration section for logging management in the application.
+    /// </summary>
+    public class LoggingConfigurationSection : ProviderConfigurationSection
     {
-        public void HandleExpcetion(Exception ex)
+        /// <summary>
+        /// Returns daLoggingConfiguration as the name of the configuration section.
+        /// </summary>
+        /// <returns>Returns the name of the confiuration section as a <see cref="string"/>.</returns>
+        public override string GetConfigurationSectionName()
         {
-            throw new NotImplementedException();
-        }
-
-        public void HandleExpcetion(Exception ex, string exceptionPolicy)
-        {
-            throw new NotImplementedException();
+            return "daLoggingConfiguration";
         }
     }
 }

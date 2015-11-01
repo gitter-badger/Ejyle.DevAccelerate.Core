@@ -15,6 +15,8 @@ using Ejyle.DevAccelerate.Core.Logging;
 using Ejyle.DevAccelerate.Core.Configuration;
 using Ejyle.DevAccelerate.Core.Files;
 using Ejyle.DevAccelerate.Core.Identity;
+using Ejyle.DevAccelerate.Core.Data;
+using Ejyle.DevAccelerate.Core.Mail;
 
 namespace Ejyle.DevAccelerate.Core
 {
