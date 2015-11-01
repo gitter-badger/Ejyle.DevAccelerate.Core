@@ -18,25 +18,26 @@ namespace Ejyle.DevAccelerate.Core.Configuration
     /// </summary>
     public class DaApplicationConfigurationSection : DaConfigurationSection
     {
+        private const string USER_CONTEXT_MANAGER = "userContextManager";
+
         /// <summary>
         /// Gets or sets user context management type that implements the <see cref="IUserContextManager"/> interface.
         /// </summary>
-        /// <remarks>The name of the configuration property is userContextManager.</remarks>
-        [ConfigurationProperty("userContextManager", IsRequired=false)]
+        [ConfigurationProperty(USER_CONTEXT_MANAGER, IsRequired = false)]
         public string UserContextManager
         {
             get
             {
-                return this["userContextManager"] as string;
+                return this[USER_CONTEXT_MANAGER] as string;
             }
             set
             {
-                this["userContextManager"] = value;
+                this[USER_CONTEXT_MANAGER] = value;
             }
         }
 
         /// <summary>
-        /// Returns daApplicationConfiguration as the name of the configuration section. 
+        /// Gets the name of the configuration section. 
         /// </summary>
         /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()

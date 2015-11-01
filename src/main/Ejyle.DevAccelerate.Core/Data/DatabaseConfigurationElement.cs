@@ -18,20 +18,23 @@ namespace Ejyle.DevAccelerate.Core.Data
     /// </summary>
     public class DatabaseConfigurationElement : NamedConfigurationElement
     {
+        private const string DATABASE_CONTEXT_TYPE = "databaseContextType";
+        private const string CONNECTION_STRING = "connectionString";
+
         /// <summary>
-        /// Gets or sets the database context type that implements the <see cref="IDatabaseContext"/> interface.
+        /// Gets or sets the database context type that implements the <see cref="IDatebaseContext"/> interface.
         /// </summary>
         /// <remarks>The name of the configuration property is databaseContextType.</remarks>
-        [ConfigurationProperty("databaseContextType", IsRequired = true)]
+        [ConfigurationProperty(DATABASE_CONTEXT_TYPE, IsRequired = true)]
         public string DatabaseContextType
         {
             get
             {
-                return this["databaseContextType"] as string;
+                return this[DATABASE_CONTEXT_TYPE] as string;
             }
             set
             {
-                this["databaseContextType"] = value;
+                this[DATABASE_CONTEXT_TYPE] = value;
             }
         }
 
@@ -39,16 +42,16 @@ namespace Ejyle.DevAccelerate.Core.Data
         /// Gets or sets the connection string information of a database configuration element.
         /// </summary>
         /// <remarks>The name of the configuration property is connectionString.</remarks>
-        [ConfigurationProperty("connectionString", IsRequired = false)]
+        [ConfigurationProperty(CONNECTION_STRING, IsRequired = false)]
         public string ConnectionString
         {
             get
             {
-                return this["connectionString"] as string;
+                return this[CONNECTION_STRING] as string;
             }
             set
             {
-                this["connectionString"] = value;
+                this[CONNECTION_STRING] = value;
             }
         }
     }

@@ -14,31 +14,32 @@ using Ejyle.DevAccelerate.Core.Configuration;
 namespace Ejyle.DevAccelerate.Core.Exceptions
 {
     /// <summary>
-    /// Represents the configuration section for exception handling in the application.
+    /// Represents the configuration section for exception handling.
     /// </summary>
     public class ExceptionHandlingConfigurationSection : ProviderConfigurationSection
     {
+        private const string DEFAULT_EXCEPTION_POLICY = "defaultExceptionPolicy";
+
         /// <summary>
         /// Gets or sets the name of the default exception policy.
         /// </summary>
-        /// <remarks>The name of the configuration property is defaultExceptionPolicy.</remarks>
-        [ConfigurationProperty("defaultExceptionPolicy", IsRequired = false, DefaultValue="Default Exception Policy")]
+        [ConfigurationProperty(DEFAULT_EXCEPTION_POLICY, IsRequired = false, DefaultValue = "Default Exception Policy")]
         public string DefaultExceptionPolicy
         {
             get
             {
-                return this["defaultExceptionPolicy"] as string;
+                return this[DEFAULT_EXCEPTION_POLICY] as string;
             }
             set
             {
-                this["defaultExceptionPolicy"] = value;
+                this[DEFAULT_EXCEPTION_POLICY] = value;
             }
         }
 
         /// <summary>
-        /// Returns daExceptionHandlingConfiguration as the name of the configuration section.
+        /// Gets the name of the configuration section.
         /// </summary>
-        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns> 
         public override string GetConfigurationSectionName()
         {
             return "daExceptionHandlingConfiguration";

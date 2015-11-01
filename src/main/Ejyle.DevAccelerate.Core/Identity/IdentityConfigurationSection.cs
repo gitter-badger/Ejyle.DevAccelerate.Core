@@ -18,20 +18,28 @@ namespace Ejyle.DevAccelerate.Core.Identity
     /// </summary>
     public class IdentityConfigurationSection : DaConfigurationSection
     {
+        private const string USER_TOKEN_PROVIDER = "userTokenProvider";
+        private const string EMAIL_SERVICE = "emailService";
+        private const string SMS_SERVICE = "smsService";
+        private const string TWO_FACTOR_POLICY = "twoFactorPolicy";
+        private const string USER_NAME_POLICY = "userNamePolicy";
+        private const string PASSWORD_POLICY = "passwordPolicy";
+        private const string USER_LOCKOUT_POLICY = "userLockoutPolicy";
+
         /// <summary>
         /// Gets or sets user token provider type.
         /// </summary>
         /// <remarks>The name of the configuration property is userTokenProvider.</remarks>
-        [ConfigurationProperty("userTokenProvider", IsRequired = false)]
+        [ConfigurationProperty(USER_TOKEN_PROVIDER, IsRequired = false)]
         public string UserTokenProvider
         {
             get
             {
-                return this["userTokenProvider"] as string;
+                return this[USER_TOKEN_PROVIDER] as string;
             }
             set
             {
-                this["userTokenProvider"] = value;
+                this[USER_TOKEN_PROVIDER] = value;
             }
         }
 
@@ -39,16 +47,16 @@ namespace Ejyle.DevAccelerate.Core.Identity
         /// Gets or sets the email service type.
         /// </summary>
         /// <remarks>The name of the configuration property is emailService.</remarks>
-        [ConfigurationProperty("emailService", IsRequired = false)]
+        [ConfigurationProperty(EMAIL_SERVICE, IsRequired = false)]
         public string EmailService
         {
             get
             {
-                return this["emailService"] as string;
+                return this[EMAIL_SERVICE] as string;
             }
             set
             {
-                this["emailService"] = value;
+                this[EMAIL_SERVICE] = value;
             }
         }
 
@@ -56,16 +64,16 @@ namespace Ejyle.DevAccelerate.Core.Identity
         /// Gets or sets the SMS service type.
         /// </summary>
         /// <remarks>The name of the configuration property is smsService.</remarks>
-        [ConfigurationProperty("smsService", IsRequired = false)]
+        [ConfigurationProperty(SMS_SERVICE, IsRequired = false)]
         public string SMSService
         {
             get
             {
-                return this["smsService"] as string;
+                return this[SMS_SERVICE] as string;
             }
             set
             {
-                this["smsService"] = value;
+                this[SMS_SERVICE] = value;
             }
         }
 
@@ -73,16 +81,16 @@ namespace Ejyle.DevAccelerate.Core.Identity
         /// Gets or sets the two factory policy settings.
         /// </summary>
         /// <remarks>The name of the configuration policy is twoFactorPolicy.</remarks>
-        [ConfigurationProperty("twoFactorPolicy", IsRequired = false)]
+        [ConfigurationProperty(TWO_FACTOR_POLICY, IsRequired = false)]
         public IdentityTwoFactorPolicyConfigurationElement TwoFactorPolicy
         {
             get
             {
-                return this["twoFactorPolicy"] as IdentityTwoFactorPolicyConfigurationElement;
+                return this[TWO_FACTOR_POLICY] as IdentityTwoFactorPolicyConfigurationElement;
             }
             set
             {
-                this["twoFactorPolicy"] = value;
+                this[TWO_FACTOR_POLICY] = value;
             }
         }
 
@@ -90,16 +98,16 @@ namespace Ejyle.DevAccelerate.Core.Identity
         /// Gets or sets the username policy settings.
         /// </summary>
         /// <remarks>The name of the configuration property is userNamePolicy.</remarks>
-        [ConfigurationProperty("userNamePolicy", IsRequired = false)]
+        [ConfigurationProperty(USER_NAME_POLICY, IsRequired = false)]
         public IdentityUserNamePolicyConfigurationElement UserNamePolicy
         {
             get
             {
-                return this["userNamePolicy"] as IdentityUserNamePolicyConfigurationElement;
+                return this[USER_NAME_POLICY] as IdentityUserNamePolicyConfigurationElement;
             }
             set
             {
-                this["userNamePolicy"] = value;
+                this[USER_NAME_POLICY] = value;
             }
         }
 
@@ -107,16 +115,16 @@ namespace Ejyle.DevAccelerate.Core.Identity
         /// Gets or sets the password policy settings.
         /// </summary>
         /// <remarks>The name of the configuration property is passwordPolicy.</remarks>
-        [ConfigurationProperty("passwordPolicy", IsRequired = false)]
+        [ConfigurationProperty(PASSWORD_POLICY, IsRequired = false)]
         public IdentityPasswordPolicyConfigurationElement PasswordPolicy
         {
             get
             {
-                return this["passwordPolicy"] as IdentityPasswordPolicyConfigurationElement;
+                return this[PASSWORD_POLICY] as IdentityPasswordPolicyConfigurationElement;
             }
             set
             {
-                this["passwordPolicy"] = value;
+                this[PASSWORD_POLICY] = value;
             }
         }
 
@@ -124,21 +132,21 @@ namespace Ejyle.DevAccelerate.Core.Identity
         /// Gets or sets user lockout policy settings.
         /// </summary>
         /// <remarks>The name of the configuration property is userLockoutPolicy.</remarks>
-        [ConfigurationProperty("userLockoutPolicy", IsRequired = false)]
+        [ConfigurationProperty(USER_LOCKOUT_POLICY, IsRequired = false)]
         public IdentityLockoutPolicyConfigurationElement UserLockoutPolicy
         {
             get
             {
-                return this["userLockoutPolicy"] as IdentityLockoutPolicyConfigurationElement;
+                return this[USER_LOCKOUT_POLICY] as IdentityLockoutPolicyConfigurationElement;
             }
             set
             {
-                this["userLockoutPolicy"] = value;
+                this[USER_LOCKOUT_POLICY] = value;
             }
         }
 
         /// <summary>
-        /// Returns daIdentityConfiguration as the name of the configuration section.
+        /// Gets the name of the configuration section.
         /// </summary>
         /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()

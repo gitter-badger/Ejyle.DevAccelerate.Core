@@ -19,7 +19,7 @@ namespace Ejyle.DevAccelerate.Core.Caching
     public class CachingConfigurationSection : ProviderConfigurationSection
     {
         /// <summary>
-        /// Returns daCachingConfiguration as the name of the configuration section.
+        /// Gets the name of the configuration section.
         /// </summary>
         /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public override string GetConfigurationSectionName()

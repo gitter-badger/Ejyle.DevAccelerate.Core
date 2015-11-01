@@ -12,11 +12,18 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents a file-based configuration source.
+    /// </summary>
     public class FileConfigurationSource : IConfigurationSource
     {
         private string _ConfigurationFile = null;
         private static System.Configuration.Configuration _Configuration;
 
+        /// <summary>
+        /// Initializes an instance of the <see cref="FileConfigurationSource"/> class.
+        /// </summary>
+        /// <param name="configurationFile">The configuration source file.</param>
         public FileConfigurationSource(string configurationFile)
         {
             if(String.IsNullOrEmpty(configurationFile))
@@ -30,6 +37,12 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             _Configuration = ConfigurationManager.OpenMappedMachineConfiguration(configFileMap);
         }
 
+        /// <summary>
+        /// Gets a configuration section of a given name from the configuration source.
+        /// </summary>
+        /// <typeparam name="T">The type of the configuration section.</typeparam>
+        /// <param name="configSectionName">The name of the configuration section.</param>
+        /// <returns>Returns a generic instance of the <see cref="DaConfigurationSection"/> type.</returns>
         public T GetConfigurationSection<T>(string configSectionName)
             where T : DaConfigurationSection
         {
@@ -41,11 +54,17 @@ namespace Ejyle.DevAccelerate.Core.Configuration
             return _Configuration.GetSection(configSectionName) as T;
         }
 
+        /// <summary>
+        /// Saves changes into the configuration source.
+        /// </summary>
         public void Save()
         {
             Configuration.Save();
         }
 
+        /// <summary>
+        /// Gets the configuration file information. 
+        /// </summary>
         public System.Configuration.Configuration Configuration
         {
             get

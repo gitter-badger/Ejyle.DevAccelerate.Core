@@ -12,18 +12,26 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Represents additional properties for a named configuration element.
+    /// </summary>
     public class ExtendedPropertyConfigurationElement : NamedConfigurationElement
     {
-        [ConfigurationProperty("value", IsRequired = true)]
+        private const string VALUE = "value";
+
+        /// <summary>
+        /// Gets or sets the value of the named configuration element.
+        /// </summary>
+        [ConfigurationProperty(VALUE, IsRequired = true)]
         public string Value
         {
             get
             {
-                return this["value"] as string;
+                return this[VALUE] as string;
             }
             set
             {
-                this["value"] = value;
+                this[VALUE] = value;
             }
         }
     }

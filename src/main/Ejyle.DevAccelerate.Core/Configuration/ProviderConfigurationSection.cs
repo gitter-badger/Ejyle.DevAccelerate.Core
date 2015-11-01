@@ -12,34 +12,43 @@ using System.Threading.Tasks;
 
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
+    /// <summary>
+    /// Defines the properties for a provider configuration.
+    /// </summary>
     public class ProviderConfigurationSection : DaConfigurationSection
     {
-        private const string PROPERTY_EXTENDED_PROPERTIES = "extendedProperties";
-        private const string PROPERTY_TYPE = "type";
+        private const string EXTENDED_PROPERTIES = "extendedProperties";
+        private const string TYPE = "type";
 
-        [ConfigurationProperty(PROPERTY_TYPE, IsRequired = true)]
+        /// <summary>
+        /// Gets or sets the type of the provider.
+        /// </summary>
+        [ConfigurationProperty(TYPE, IsRequired = true)]
         public string Type
         {
             get
             {
-                return this[PROPERTY_TYPE] as string;
+                return this[TYPE] as string;
             }
             set
             {
-                this[PROPERTY_TYPE] = value;
+                this[TYPE] = value;
             }
         }
 
-        [ConfigurationProperty(PROPERTY_EXTENDED_PROPERTIES)]
+        /// <summary>
+        /// Gets or sets the collection of extended properties for the provider configuration section.
+        /// </summary>
+        [ConfigurationProperty(EXTENDED_PROPERTIES)]
         public ExtendedPropertyConfigurationElementCollection ExtendedProperties
         {
             get
             {
-                return this[PROPERTY_EXTENDED_PROPERTIES] as ExtendedPropertyConfigurationElementCollection;
+                return this[EXTENDED_PROPERTIES] as ExtendedPropertyConfigurationElementCollection;
             }
             set
             {
-                this[PROPERTY_EXTENDED_PROPERTIES] = value;
+                this[EXTENDED_PROPERTIES] = value;
             }
         }
     }

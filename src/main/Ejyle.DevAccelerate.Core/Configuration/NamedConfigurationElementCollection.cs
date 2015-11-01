@@ -8,91 +8,60 @@ using System.Configuration;
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
     /// <summary>
-    /// Represents the collection of <see cref="NamedConfigurationElement"/> objects.
+    /// Contains a collections of the <see cref="NamedConfigurationElement"/> objects.
     /// </summary>
     public abstract class NamedConfigurationElementCollection<T> : ConfigurationElementCollection
         where T : NamedConfigurationElement
     {
-        #region Properties
-
         /// <summary>
-        /// Gets or sets the <see cref="NamedConfigurationElement"/> from the collection.
-        /// </summary>
-        /// <param name="index">
-        /// The index of the <see cref="NamedConfigurationElement"/> within the collection.
-        /// </param>
-        /// <returns>Returns an instance of the <see cref="NamedConfigurationElement"/> class.</returns>
-        public T this[int index]
-        {
-            get
-            {
-                return base.BaseGet(index) as T;
-            }
-            set
-            {
-                if (base.BaseGet(index) != null)
-                {
-                    base.BaseRemoveAt(index);
-                }
-                this.BaseAdd(index, value);
-            }
-        }
-
-        public new T this[string name]
-        {
-            get
-            {
-                return base.BaseGet((object)name) as T;
-            }
-            set
-            {
-                if (base.BaseGet((object)name) != null)
-                {
-                    base.BaseRemove((object)name);
-                }
-
-                this.BaseAdd(value);
-            }
-        }
-
-        #endregion Properties
-
-        #region Methods
-
-        /// <summary>
-        /// Gets the name of the <see cref="NamedConfigurationElement"/> object as its key within the collection.
+        /// Gets the element name (key) for a specified named configuration element.
         /// </summary>
         /// <param name="element">
-        /// The base class of the <see cref="NamedConfigurationElement"/> class.
+        /// The <see cref="ConfigurationElement"/> to return the key for.
         /// </param>
         /// <returns>
-        /// Returns the name of the configuration element as an instance of <see cref="System.Object"/>.
+        /// Returns <see cref="object"/> that acts as the key for the specified <see cref="ConfigurationElement"/>.
         /// </returns>
         protected override object GetElementKey(ConfigurationElement element)
         {
             return ((T)element).Name;
         }
 
+        /// <summary>
+        /// Returns the configuration element with the specified name.
+        /// </summary>
+        /// <param name="name">The name of the element to return.</param>
+        /// <returns>The <see cref="NamedConfigurationElement"/> with the specified name; otherwise, null.</returns>
         public T GetByName(string name)
         {
             return (T)this.BaseGet((object)name);
         }
 
+        /// <summary>
+        /// Adds an element to the collection.
+        /// </summary>
+        /// <param name="element">The element to add to the collection.</param>
         public void Add(T element)
         {
             this.BaseAdd(element);
         }
 
-        public void Remove(string name)
+        /// <summary>
+        /// Removes a <see cref="NamedConfigurationElement"/> from the collection.
+        /// </summary>
+        /// <param name="name">The name of the <see cref="NamedConfigurationElement"/> to remove.</param>
+        public void Remove(object name)
         {
-            this.BaseRemove((object)name);
+            this.BaseRemove(name);
         }
 
+        /// <summary>
+        /// Removes the <see cref="NamedConfigurationElement"/> at the specified index location.
+        /// </summary>
+        /// <param name="index">The index location of the <see cref="NamedConfigurationElement"/> to remove.</param>
         public void RemoveAt(int index)
         {
             this.BaseRemoveAt(index);
         }
-
-        #endregion Methods
     }
 }

@@ -8,9 +8,22 @@ using System;
 
 namespace Ejyle.DevAccelerate.Core.Exceptions
 {
+    /// <summary>
+    /// Defines the methods for exception management.
+    /// </summary>
     public interface IExceptionManager
     {
+        /// <summary>
+        /// Handles an exception based on the default exception policy.
+        /// </summary>
+        /// <param name="ex">The exception to handle.</param>
         void HandleExpcetion(Exception ex);
+
+        /// <summary>
+        /// Handles an exception based on a given exception policy.
+        /// </summary>
+        /// <param name="ex">The exception to handle.</param>
+        /// <param name="exceptionPolicy">The name of the exception policy.</param>
         void HandleExpcetion(Exception ex, string exceptionPolicy);
     }
 }

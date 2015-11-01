@@ -8,30 +8,26 @@ using System.Configuration;
 namespace Ejyle.DevAccelerate.Core.Configuration
 {
     /// <summary>
-    /// Represents a configuration element for a provider.
+    /// Represents a named property for a provider configuration.
     /// </summary>
     public class NamedConfigurationElement : ConfigurationElement
     {
-        private const string PROPERTY_NAME = "name";
-
-        #region Properties
+        private const string NAME = "name";
 
         /// <summary>
-        /// Gets or sets the name of the provider.
+        /// Gets or sets the name of the property.
         /// </summary>
-        [ConfigurationProperty(PROPERTY_NAME, IsRequired = true)]
+        [ConfigurationProperty(NAME, IsRequired = true)]
         public string Name
         {
             get
             {
-                return this[PROPERTY_NAME] as string;
+                return this[NAME] as string;
             }
             set
             {
-                this[PROPERTY_NAME] = value;
+                this[NAME] = value;
             }
         }
-
-        #endregion Properties
     }
 }

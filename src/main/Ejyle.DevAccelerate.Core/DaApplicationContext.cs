@@ -227,7 +227,7 @@ namespace Ejyle.DevAccelerate.Core
                 throw new InvalidOperationException("Database settings have not been set and therefore database context cannot be created.");
             }
 
-            Type type = Type.GetType(_DatabaseSettings.Databases[_DatabaseSettings.DefaultDatabase].DatabaseContextType);
+            Type type = Type.GetType(_DatabaseSettings.Databases.GetByName(_DatabaseSettings.DefaultDatabase).DatabaseContextType);
             var context = (TDatabaseContext)Activator.CreateInstance(type);
             context.ConnectionString = _DatabaseSettings.GetDefaultDatabaseConfiguration().ConnectionString;
             
