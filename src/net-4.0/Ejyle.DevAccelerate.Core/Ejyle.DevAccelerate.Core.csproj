@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{136E1432-20F6-4512-8A42-73CF305B5DE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ejyle.DevAccelerate.Core</RootNamespace>
+    <AssemblyName>Ejyle.DevAccelerate.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\net-4.0\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\..\bin\net-4.0\Ejyle.DevAccelerate.Core.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>da.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="da.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Caching\CachingConfigurationSection.cs">
+      <Link>Caching\CachingConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Caching\DefaultCacheManager.cs">
+      <Link>Caching\DefaultCacheManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Caching\ICacheManager.cs">
+      <Link>Caching\ICacheManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\DaApplicationConfigurationSection.cs">
+      <Link>Configuration\DaApplicationConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\DaConfigurationSection.cs">
+      <Link>Configuration\DaConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\DefaultConfigurationSource.cs">
+      <Link>Configuration\DefaultConfigurationSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\ExtendedPropertyConfigurationElement.cs">
+      <Link>Configuration\ExtendedPropertyConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\ExtendedPropertyConfigurationElementCollection.cs">
+      <Link>Configuration\ExtendedPropertyConfigurationElementCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\FileConfigurationSource.cs">
+      <Link>Configuration\FileConfigurationSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\IConfigurationSource.cs">
+      <Link>Configuration\IConfigurationSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\NamedConfigurationElement.cs">
+      <Link>Configuration\NamedConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\NamedConfigurationElementCollection.cs">
+      <Link>Configuration\NamedConfigurationElementCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Configuration\ProviderConfigurationSection.cs">
+      <Link>Configuration\ProviderConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\DaApplicationContext.cs">
+      <Link>DaApplicationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\DaApplicationContextExtensions.cs">
+      <Link>DaApplicationContextExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Data\DatabaseConfigurationElement.cs">
+      <Link>Data\DatabaseConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Data\DatabaseConfigurationElementCollection.cs">
+      <Link>Data\DatabaseConfigurationElementCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Data\DatabaseConfigurationSection.cs">
+      <Link>Data\DatabaseConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Data\IDatebaseContext.cs">
+      <Link>Data\IDatebaseContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\EntityBase.cs">
+      <Link>EntityBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\EntityManagerBase.cs">
+      <Link>EntityManagerBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Exceptions\ExceptionHandlingConfigurationSection.cs">
+      <Link>Exceptions\ExceptionHandlingConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Exceptions\IExceptionManager.cs">
+      <Link>Exceptions\IExceptionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\DefaultUploadedFile.cs">
+      <Link>Files\DefaultUploadedFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\File.cs">
+      <Link>Files\File.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileLocation.cs">
+      <Link>Files\FileLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileManager.cs">
+      <Link>Files\FileManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileStorageConfigurationSection.cs">
+      <Link>Files\FileStorageConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileStorageHelper.cs">
+      <Link>Files\FileStorageHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileStorageManagerBase.cs">
+      <Link>Files\FileStorageManagerBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileType.cs">
+      <Link>Files\FileType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileTypeCategory.cs">
+      <Link>Files\FileTypeCategory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\FileTypeManager.cs">
+      <Link>Files\FileTypeManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IFile.cs">
+      <Link>Files\IFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IFileLocation.cs">
+      <Link>Files\IFileLocation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IFileRepository.cs">
+      <Link>Files\IFileRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IFileStorageManager.cs">
+      <Link>Files\IFileStorageManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IFileType.cs">
+      <Link>Files\IFileType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IFileTypeRepository.cs">
+      <Link>Files\IFileTypeRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\IUploadedFile.cs">
+      <Link>Files\IUploadedFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Files\PathType.cs">
+      <Link>Files\PathType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\IDatebaseContext.cs">
+      <Link>IDatebaseContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AccountStatus.cs">
+      <Link>Identity\AccountStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\Address.cs">
+      <Link>Identity\Address.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AddressManager.cs">
+      <Link>Identity\AddressManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AddressType.cs">
+      <Link>Identity\AddressType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\App.cs">
+      <Link>Identity\App.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppGroups.cs">
+      <Link>Identity\AppGroups.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppGroupsManager.cs">
+      <Link>Identity\AppGroupsManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppManager.cs">
+      <Link>Identity\AppManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppMapping.cs">
+      <Link>Identity\AppMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppResource.cs">
+      <Link>Identity\AppResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppResourceAction.cs">
+      <Link>Identity\AppResourceAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\AppResourcePermissionBase.cs">
+      <Link>Identity\AppResourcePermissionBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\EmailAddress.cs">
+      <Link>Identity\EmailAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\ExceptionMessage.cs">
+      <Link>Identity\ExceptionMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\FilteredIP.cs">
+      <Link>Identity\FilteredIP.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\Group.cs">
+      <Link>Identity\Group.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\GroupManager.cs">
+      <Link>Identity\GroupManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\GroupMember.cs">
+      <Link>Identity\GroupMember.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\GroupRole.cs">
+      <Link>Identity\GroupRole.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAddress.cs">
+      <Link>Identity\IAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAddressRepository.cs">
+      <Link>Identity\IAddressRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IApp.cs">
+      <Link>Identity\IApp.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppGroup.cs">
+      <Link>Identity\IAppGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppGroupRepository.cs">
+      <Link>Identity\IAppGroupRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppMapping.cs">
+      <Link>Identity\IAppMapping.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppRepository.cs">
+      <Link>Identity\IAppRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppResource.cs">
+      <Link>Identity\IAppResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppResourceAction.cs">
+      <Link>Identity\IAppResourceAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAppResourcePermission.cs">
+      <Link>Identity\IAppResourcePermission.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IAuthorizationSet.cs">
+      <Link>Identity\IAuthorizationSet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IdentityConfigurationSection.cs">
+      <Link>Identity\IdentityConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IdentityLockoutPolicyConfigurationElement.cs">
+      <Link>Identity\IdentityLockoutPolicyConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IdentityPasswordPolicyConfigurationElement.cs">
+      <Link>Identity\IdentityPasswordPolicyConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IdentityTwoFactorPolicyConfigurationElement.cs">
+      <Link>Identity\IdentityTwoFactorPolicyConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IdentityUserNamePolicyConfigurationElement.cs">
+      <Link>Identity\IdentityUserNamePolicyConfigurationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IEmailAddress.cs">
+      <Link>Identity\IEmailAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IFilteredIP.cs">
+      <Link>Identity\IFilteredIP.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IGroup.cs">
+      <Link>Identity\IGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IGroupMember.cs">
+      <Link>Identity\IGroupMember.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IGroupRepository.cs">
+      <Link>Identity\IGroupRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IGroupRole.cs">
+      <Link>Identity\IGroupRole.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IIPFilterPolicy.cs">
+      <Link>Identity\IIPFilterPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IIPFilterPolicyRepository.cs">
+      <Link>Identity\IIPFilterPolicyRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\ILoginHistory.cs">
+      <Link>Identity\ILoginHistory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\ILoginHistoryRepository.cs">
+      <Link>Identity\ILoginHistoryRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IPFilterPolicy.cs">
+      <Link>Identity\IPFilterPolicy.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IPFilterPolicyManager.cs">
+      <Link>Identity\IPFilterPolicyManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IRole.cs">
+      <Link>Identity\IRole.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IRolePermission.cs">
+      <Link>Identity\IRolePermission.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IRolePermissionRepository.cs">
+      <Link>Identity\IRolePermissionRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IRoleRepository.cs">
+      <Link>Identity\IRoleRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\ISystemAccount.cs">
+      <Link>Identity\ISystemAccount.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\ISystemAccountMember.cs">
+      <Link>Identity\ISystemAccountMember.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\ISystemAccountRepository.cs">
+      <Link>Identity\ISystemAccountRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUser.cs">
+      <Link>Identity\IUser.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserActionToken.cs">
+      <Link>Identity\IUserActionToken.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserActionTokenRepository.cs">
+      <Link>Identity\IUserActionTokenRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserAddress.cs">
+      <Link>Identity\IUserAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserAddressRepository.cs">
+      <Link>Identity\IUserAddressRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserClaim.cs">
+      <Link>Identity\IUserClaim.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserContextManager.cs">
+      <Link>Identity\IUserContextManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserLogin.cs">
+      <Link>Identity\IUserLogin.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserPermission.cs">
+      <Link>Identity\IUserPermission.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserPermissionRepository.cs">
+      <Link>Identity\IUserPermissionRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserReport.cs">
+      <Link>Identity\IUserReport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserReportRepository.cs">
+      <Link>Identity\IUserReportRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserRepository.cs">
+      <Link>Identity\IUserRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\IUserRole.cs">
+      <Link>Identity\IUserRole.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\LoginAction.cs">
+      <Link>Identity\LoginAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\LoginHistory.cs">
+      <Link>Identity\LoginHistory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\LoginHistoryManager.cs">
+      <Link>Identity\LoginHistoryManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\PermissionType.cs">
+      <Link>Identity\PermissionType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\RolePermission.cs">
+      <Link>Identity\RolePermission.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\RolePermissionManager.cs">
+      <Link>Identity\RolePermissionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\SystemAccount.cs">
+      <Link>Identity\SystemAccount.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\SystemAccountManager.cs">
+      <Link>Identity\SystemAccountManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\SystemAccountMember.cs">
+      <Link>Identity\SystemAccountMember.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\SystemAccountType.cs">
+      <Link>Identity\SystemAccountType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserActionToken.cs">
+      <Link>Identity\UserActionToken.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserActionTokenManager.cs">
+      <Link>Identity\UserActionTokenManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserActionTokenType.cs">
+      <Link>Identity\UserActionTokenType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserAddress.cs">
+      <Link>Identity\UserAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserPermission.cs">
+      <Link>Identity\UserPermission.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserPermissionManager.cs">
+      <Link>Identity\UserPermissionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserReport.cs">
+      <Link>Identity\UserReport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserReportAction.cs">
+      <Link>Identity\UserReportAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserReportManager.cs">
+      <Link>Identity\UserReportManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserReportReason.cs">
+      <Link>Identity\UserReportReason.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserReportStatus.cs">
+      <Link>Identity\UserReportStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Identity\UserType.cs">
+      <Link>Identity\UserType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\IEntity.cs">
+      <Link>IEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\IEntityRepository.cs">
+      <Link>IEntityRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\Country.cs">
+      <Link>Lists\Country.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\CountryManager.cs">
+      <Link>Lists\CountryManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\Currency.cs">
+      <Link>Lists\Currency.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\CurrencyManager.cs">
+      <Link>Lists\CurrencyManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\GenericList.cs">
+      <Link>Lists\GenericList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\GenericListItem.cs">
+      <Link>Lists\GenericListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\GenericListManager.cs">
+      <Link>Lists\GenericListManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\ICountry.cs">
+      <Link>Lists\ICountry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\ICountryRepository.cs">
+      <Link>Lists\ICountryRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\ICurrency.cs">
+      <Link>Lists\ICurrency.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\ICurrencyRepository.cs">
+      <Link>Lists\ICurrencyRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\IGenericList.cs">
+      <Link>Lists\IGenericList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\IGenericListItem.cs">
+      <Link>Lists\IGenericListItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\IGenericListRepository.cs">
+      <Link>Lists\IGenericListRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\ITimezone.cs">
+      <Link>Lists\ITimezone.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\ITimezoneRepository.cs">
+      <Link>Lists\ITimezoneRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\Timezone.cs">
+      <Link>Lists\Timezone.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Lists\TimezoneManager.cs">
+      <Link>Lists\TimezoneManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Logging\ILogEntry.cs">
+      <Link>Logging\ILogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Logging\ILogManager.cs">
+      <Link>Logging\ILogManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Logging\LogEntry.cs">
+      <Link>Logging\LogEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Logging\LoggingConfigurationSection.cs">
+      <Link>Logging\LoggingConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailMessage.cs">
+      <Link>Mail\IMailMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailMessageParam.cs">
+      <Link>Mail\IMailMessageParam.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailMessageRepository.cs">
+      <Link>Mail\IMailMessageRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailRecipient.cs">
+      <Link>Mail\IMailRecipient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailSender.cs">
+      <Link>Mail\IMailSender.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailSenderRepository.cs">
+      <Link>Mail\IMailSenderRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailSubjectParam.cs">
+      <Link>Mail\IMailSubjectParam.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailTemplate.cs">
+      <Link>Mail\IMailTemplate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\IMailTemplateRepository.cs">
+      <Link>Mail\IMailTemplateRepository.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailMessage.cs">
+      <Link>Mail\MailMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailMessageManager.cs">
+      <Link>Mail\MailMessageManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailMessageParam.cs">
+      <Link>Mail\MailMessageParam.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailPriority.cs">
+      <Link>Mail\MailPriority.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailRecipient.cs">
+      <Link>Mail\MailRecipient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailRecipientType.cs">
+      <Link>Mail\MailRecipientType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailSender.cs">
+      <Link>Mail\MailSender.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailSenderManager.cs">
+      <Link>Mail\MailSenderManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailServiceConfigurationSection.cs">
+      <Link>Mail\MailServiceConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailStatus.cs">
+      <Link>Mail\MailStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailSubjectParam.cs">
+      <Link>Mail\MailSubjectParam.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailTemplate.cs">
+      <Link>Mail\MailTemplate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\main\Ejyle.DevAccelerate.Core\Mail\MailTemplateManager.cs">
+      <Link>Mail\MailTemplateManager.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

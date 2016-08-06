@@ -1,9 +1,4 @@
-﻿// ----------------------------------------------------------------------------------------------------------------------
-// Copyright © Ejyle Technologies (P) Ltd (www.ejyle.com)
-// Licensed under the MIT license. See the LICENSE file in the project's root directory for complete license information.
-// ----------------------------------------------------------------------------------------------------------------------
-
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -14,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Ejyle.DevAccelerate.Core")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ejyle Technologies (P) Ltd")]
-[assembly: AssemblyProduct("DevAccelerate Core")]
+[assembly: AssemblyProduct("Ejyle.DevAccelerate.Core")]
 [assembly: AssemblyCopyright("Copyright © Ejyle Technologies (P) Ltd (www.ejyle.com)")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -25,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("be747da4-d660-4f66-83cd-7a309d6c0f3b")]
+[assembly: Guid("7cd01f5a-511e-4946-8fc0-2907476e304e")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,8 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.1.1.0")]
 [assembly: AssemblyFileVersion("1.1.1.0")]
