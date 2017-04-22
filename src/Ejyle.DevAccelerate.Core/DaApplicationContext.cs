@@ -77,6 +77,25 @@ namespace Ejyle.DevAccelerate.Core
         }
 
         /// <summary>
+        /// Creates an intance of a cache manager.
+        /// </summary>
+        /// <returns>Returns an instance of the <see cref="ICacheManager"/> type.</returns>
+        public static ICacheManager CreateCacheManager()
+        {
+            var cachingConfiguration = GetConfiguration<CachingConfigurationSection>("daCachingConfiguration");
+
+            if (cachingConfiguration == null)
+            {
+                throw new InvalidOperationException("Caching configuration has not been set up and therefore cache manager cannot be created.");
+            }
+
+            Type type = Type.GetType(cachingConfiguration.Type);
+            var cacheManager = (ICacheManager)Activator.CreateInstance(type);
+
+            return cacheManager;
+        }
+
+        /// <summary>
         /// Creates an instance of a log manager.
         /// </summary>
         /// <typeparam name="TLogManager">The type of the log manager.</typeparam>
@@ -93,6 +112,25 @@ namespace Ejyle.DevAccelerate.Core
 
             Type type = Type.GetType(loggingConfiguration.Type);
             var logManager = (TLogManager)Activator.CreateInstance(type);
+
+            return logManager;
+        }
+
+        /// <summary>
+        /// Creates an instance of a log manager.
+        /// </summary>
+        /// <returns>Returns an instance of the <see cref="ILogManager"/> type.</returns>
+        public static ILogManager CreateLogManager()
+        {
+            var loggingConfiguration = GetConfiguration<LoggingConfigurationSection>("daLoggingConfiguration");
+
+            if (loggingConfiguration == null)
+            {
+                throw new InvalidOperationException("Logging configuration has not been set up and therefore log manager cannot be created.");
+            }
+
+            Type type = Type.GetType(loggingConfiguration.Type);
+            var logManager = (ILogManager)Activator.CreateInstance(type);
 
             return logManager;
         }
@@ -119,6 +157,25 @@ namespace Ejyle.DevAccelerate.Core
         }
 
         /// <summary>
+        /// Creates an instance of a exception manager.
+        /// </summary>
+        /// <returns>Returns an instance of the <see cref="IExceptionManager"/> interface.</returns>
+        public static IExceptionManager CreateExceptionManager()
+        {
+            var exceptionHandlingConfiguration = GetConfiguration<ExceptionHandlingConfigurationSection>("daExceptionHandlingConfiguration");
+
+            if (exceptionHandlingConfiguration == null)
+            {
+                throw new InvalidOperationException("Exception handling configuration has not been set up and therefore exception manager cannot be created.");
+            }
+
+            Type type = Type.GetType(exceptionHandlingConfiguration.Type);
+            var exceptionManager = (IExceptionManager)Activator.CreateInstance(type);
+
+            return exceptionManager;
+        }
+
+        /// <summary>
         /// Creates an instance of a database context.
         /// </summary>
         /// <typeparam name="TDatabaseContext">The type of the database context.</typeparam>
@@ -137,6 +194,26 @@ namespace Ejyle.DevAccelerate.Core
             var context = (TDatabaseContext)Activator.CreateInstance(type);
             context.ConnectionString = databaseConfiguration.GetDefaultDatabaseConfiguration().ConnectionString;
             
+            return context;
+        }
+
+        /// <summary>
+        /// Creates an instance of a database context.
+        /// </summary>
+        /// <returns>Returns an instance of the the <see cref="IDatebaseContext"/> type.</returns>
+        public static IDatabaseContext CreateDatabaseContext()
+        {
+            var databaseConfiguration = GetConfiguration<DatabaseConfigurationSection>("daDatabaseConfiguration");
+
+            if (databaseConfiguration == null)
+            {
+                throw new InvalidOperationException("Database configuration has not been set up and therefore database context cannot be created.");
+            }
+
+            Type type = Type.GetType(databaseConfiguration.Databases.GetByName(databaseConfiguration.DefaultDatabase).DatabaseContextType);
+            var context = (IDatabaseContext)Activator.CreateInstance(type);
+            context.ConnectionString = databaseConfiguration.GetDefaultDatabaseConfiguration().ConnectionString;
+
             return context;
         }
 
