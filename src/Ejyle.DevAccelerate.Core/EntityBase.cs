@@ -23,6 +23,8 @@ namespace Ejyle.DevAccelerate.Core
     /// <summary>
     /// Represents the base class for an entity.
     /// </summary>
+    /// <typeparam name="TKey">The type of the entity ID.</typeparam>
+    /// <typeparam name="TOptionalKey">The type of an optional ID.</typeparam>
     public abstract class EntityBase<TKey, TOptionalKey> : IEntity<TKey, TOptionalKey>
     {
         /// <summary>

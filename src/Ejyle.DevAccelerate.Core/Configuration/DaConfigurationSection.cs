@@ -28,7 +28,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// <summary>
         /// When overridden in a derived class, the method returns name of the configuration section.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
         public virtual string GetConfigurationSectionName()
         {
             return null;

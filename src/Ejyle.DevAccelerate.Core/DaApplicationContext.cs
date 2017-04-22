@@ -47,6 +47,7 @@ namespace Ejyle.DevAccelerate.Core
         /// <summary>
         /// Gets the configuration section by its name.
         /// </summary>
+        /// <typeparam name="TConfigurationSection">The type of the configuration source.</typeparam>
         /// <param name="configurationName">The name of the configuration section.</param>
         /// <returns>Returns an instance of the <see cref="DaConfigurationSection"/> type.</returns>
         public static TConfigurationSection GetConfiguration<TConfigurationSection>(string configurationName)

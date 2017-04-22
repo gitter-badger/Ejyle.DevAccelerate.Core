@@ -10,8 +10,9 @@ namespace Ejyle.DevAccelerate.Core.Configuration
     /// <summary>
     /// Contains a collections of the <see cref="NamedConfigurationElement"/> objects.
     /// </summary>
-    public abstract class NamedConfigurationElementCollection<T> : ConfigurationElementCollection
-        where T : NamedConfigurationElement
+    /// <typeparam name="TNamedConfigurationElement">The type of the <see cref="NamedConfigurationElement"/> type.</typeparam>
+    public abstract class NamedConfigurationElementCollection<TNamedConfigurationElement> : ConfigurationElementCollection
+        where TNamedConfigurationElement : NamedConfigurationElement
     {
         /// <summary>
         /// Gets the element name (key) for a specified named configuration element.
@@ -24,7 +25,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// </returns>
         protected override object GetElementKey(ConfigurationElement element)
         {
-            return ((T)element).Name;
+            return ((TNamedConfigurationElement)element).Name;
         }
 
         /// <summary>
@@ -32,16 +33,16 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// </summary>
         /// <param name="name">The name of the element to return.</param>
         /// <returns>The <see cref="NamedConfigurationElement"/> with the specified name; otherwise, null.</returns>
-        public T GetByName(string name)
+        public TNamedConfigurationElement GetByName(string name)
         {
-            return (T)this.BaseGet((object)name);
+            return (TNamedConfigurationElement)this.BaseGet((object)name);
         }
 
         /// <summary>
         /// Adds an element to the collection.
         /// </summary>
         /// <param name="element">The element to add to the collection.</param>
-        public void Add(T element)
+        public void Add(TNamedConfigurationElement element)
         {
             this.BaseAdd(element);
         }

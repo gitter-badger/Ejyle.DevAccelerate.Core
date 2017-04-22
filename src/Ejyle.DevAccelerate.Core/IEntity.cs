@@ -10,6 +10,8 @@ namespace Ejyle.DevAccelerate.Core
     /// <summary>
     /// Defines the properties for an entity.
     /// </summary>
+    /// <typeparam name="TKey">The type of the entity ID.</typeparam>
+    /// <typeparam name="TOptionalKey">The type of the entity optional ID.</typeparam>
     public interface IEntity<TKey, TOptionalKey>
     {
         /// <summary>
