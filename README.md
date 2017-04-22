@@ -1,8 +1,8 @@
 <h1>DevAccelerate Core</h1>
 
-DevAccelerate Core is the core library of DevAccelerate. It provides all the basic interfaces and core functionality. Other DevAccelerate projects like <a href="https://github.com/devaccelerate/identity">DevAccelerate Identity</a>, <a href="https://github.com/devaccelerate/identity-owin">DevAccelerate Identity Owin</a>, <a href="https://github.com/devaccelerate/adapters-azure-storage">DevAccelerate Azure Storage Adapter</a> etc are directly or indirectly dependent on DevAccelerate Core. This library is created and maintained by <a href="http://www.ejyle.com">Ejyle</a>.
+DevAccelerate Core is the core library of DevAccelerate. It provides all the basic interfaces and core functionality. Other DevAccelerate projects are dependent on DevAccelerate Core. This library is created and maintained by <a href="http://www.ejyle.com">Ejyle</a>.
 
-To get started, go to <a href="http://core.devaccelerate.com">http://core.devaccelerate.com</a>.
+To know more about DevAccelerate and DevAccelerate Core, please visit <a href="http://www.devaccelerate.com">http://www.devaccelerate.com</a>. We also have full documentation of DevAccelerate Core available on <a href="http://docs.devaccelerate.com/core">http://docs.devaccelerate.com/core</a>.
 
 <h3>Issues</h3>
 
