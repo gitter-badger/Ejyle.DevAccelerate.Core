@@ -66,7 +66,7 @@ using Ejyle.DevAccelerate.Core.Configuration;
 using Ejyle.DevAccelerate.Core.Exceptions;
 using Ejyle.DevAccelerate.Core.Logging;
 </pre>
-        <p>In the <strong>Application_Start()</strong> method, write the following code:</p>
+        <p>In the <strong>Application_Start</strong> method, write the following code:</p>
         <pre>
 /* Create an instance of the DefaultConfigurationSource class. This class represents the default application configuration file such as web.config in a web application. */
 var configurationSource = new DefaultConfigurationSource();
@@ -117,9 +117,9 @@ ExceptionPolicy.SetExceptionManager(mselExPolFac.CreateManager());
         <p>For a complete walkthrough of how to use the configuration tool, you should read through this article <a href="https://msdn.microsoft.com/en-in/library/ff664633(v=pandp.50).aspx" target="_blank">https://msdn.microsoft.com/en-in/library/ff664633(v=pandp.50).aspx</a>.</p>
         <h2>Caching</h2>
         <p>You can add an object of any type to cache along with a unique key. A key can be any arbitary string as long as its unique in the cache for a given object. Once you add an object to cache, you can retrieve it anytime after that.</p>
-        <p>In DevAccelerate Core, you create an instance of the <strong>ICacheManager</strong> type by calling the <strong>CreateCacheManager()</strong> method of the <strong>DaApplicationContext</strong> class. Once you have a cache manager object, you can call its members to work with the underlying caching framework.</p>
+        <p>In DevAccelerate Core, you create an instance of the <strong>ICacheManager</strong> type by calling the <strong>CreateCacheManager</strong> method of the <strong>DaApplicationContext</strong> class. Once you have a cache manager object, you can call its members to work with the underlying caching framework.</p>
         <h3>Add an Object to Cache</h3>
-        <p>You call the <strong>Add()</strong> method to add an object to the cache:</p>
+        <p>You call the <strong>Add</strong> method to add an object to the cache:</p>
 <pre>
 var employee = new Employee();
 ...
@@ -146,6 +146,37 @@ if(cacheManager.Contains("employee_" + employeeId))
 <pre>
 var cacheManager = DaApplicationContext.CreateCacheManager();
 cacheManager.Flush();
+</pre>
+<h2>Exception Handling</h2>
+        <p>To handle exceptions in DevAccelerate Core is very simple. Firstly, you need to create an instance of the <strong>IExceptionManager</strong> type and secondly invoke its <strong>HandleException</strong> method:</p>
+<pre>
+try
+{
+    // Code that can potentially throw an exception
+}
+catch(Exception ex)
+{
+    var exceptionManager = DaApplicationContext.CreateExceptionManager();
+    exceptionManager.HandleExpcetion(ex);
+}
+</pre>
+        <h2>Logging</h2>
+        <p>To write log messages in a unified fashion regardless of all the under-the-hood complexities that can quickly pile up depending upon what the needs are, you just need to create an instance of the <strong>ILogManager</strong> type and pass an <strong>ILogMessage</strong> object to the <strong>Write</strong> method:</p>
+<pre>
+var logManager = DaApplicationContext.CreateLogManager();
+
+var msg = new LogMessage()
+{
+    Title = "some title",
+    Priority = 3,
+    Text = "Some text"
+};
+
+var categories = new List<string>();
+categories.Add("General");
+msg.Categories = categories;
+
+logManager.Write(msg);
 </pre>
         <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/devaccelerate/core">DevAccelerate Core</a> is maintained by <a href="http://www.ejyle.com">Ejyle</a>.</span>
