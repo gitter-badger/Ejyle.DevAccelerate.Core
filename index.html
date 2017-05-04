@@ -24,11 +24,131 @@
             <a id="core" class="anchor" href="#core" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview
         </h1>
         <p>DevAccelerate Core is the core library of the DevAccelerate Framework. Every other DevAccelerate library depends on DevAccelerate Core. DevAccelerate core provides some of the core functionalities such configuration management, caching, exception handling, and log management.</p>
-        <p>DevAccelerate does not impose any particular implementation of caching, logging, or exception handling. It uses a well-established provider model that can be used to plug other implementations and libraries such as Microsoft Enterprise Library. The obvious benefit of this flexibility is that you can switch to any other underlying framework such as Log4Net by simply making a configuration change without making any modifications to your code whatsoever.</p>
+        <p>DevAccelerate does not impose any particular implementation of caching, logging, or exception handling. It uses a well-established provider model that can be used to plug other implementations and libraries such as <a href="https://msdn.microsoft.com/en-us/library/dn169621.aspx">Microsoft Enterprise Library</a>. The obvious benefit of this flexibility is that you can switch to any other underlying framework such as <a href="https://logging.apache.org/log4net/">Apache Log4Net</a> by simply making a configuration change without making any modifications to your code whatsoever.</p>
         <h2>Code Documentation</h2>
         <p>We have written MSDN-style comprehensive code documentation (<a href="http://core.devaccelerate.com/docs">http://core.devaccelerate.com/docs</a>) that you can use as a reference for DevAccelerate Core.</p>
+        <h2>Installing DevAccelerate Core</h2>
+        <p>
+            You can install DevAccelerate Code by using <strong>NuGet Package Manager</strong>. Simply follow these steps:
+            <ol>
+                <li>
+                    Go to <strong>Tools</strong> > <strong>NuGet Package Manager</strong> > <strong>Package Manager Console</strong>.
+                </li>
+                <li>
+                    Install DevAccelerate Core by executing the following command one-by-one:<br />
+                    <code>
+                        Install-Package DevAccelerateCore
+                    </code>
+                </li>
+            </ol>
+        </p>
+        <p>
+            If you are planning to use Microsoft Enterprise Library's Logging and Exception Handling along with DevAccelerate Core then you would need to install the their plugin packages as well:<br />
+<pre>
+Install-Package DevAccelerateCoreLoggingMsel
+Install-Package DevAccelerateCoreExceptionHandlingMsel
+</pre>
+        </p>
+        <p>
+            <strong>Note: </strong>Installation of DevAccelerateCoreLoggingMsel and DevAccelerateCoreExceptionHandlingMsel NuGet packages will automatically install all the Microsoft Enterprise Library dependencies in your project.
+        </p>
+        <h2>Boostrapping DevAccelerate Core</h2>
+        <p>
+            The best place to bootstrap DevAccelerate Core in an ASP.NET web application is the <strong>Application_Start</strong> event in the <strong>Global.asax</strong> file. The reason is simple: DevAccelerate Core needs to be bootstrapped (or so-called initialized) only once in the application lifecycle.
+        </p>
+        <p>
+            At the top of the <strong>Global.asax</strong> file, import the following namespaces:
+        </p>
+<pre>
+using Ejyle.DevAccelerate.Core;
+using Ejyle.DevAccelerate.Core.Caching;
+using Ejyle.DevAccelerate.Core.Configuration;
+using Ejyle.DevAccelerate.Core.Exceptions;
+using Ejyle.DevAccelerate.Core.Logging;
+</pre>
+        <p>In the <strong>Application_Start()</strong> method, write the following code:</p>
+        <pre>
+/* Create an instance of the DefaultConfigurationSource class. This class represents the default application configuration file such as web.config in a web application. */
+var configurationSource = new DefaultConfigurationSource();
+/* Setup the configuration for DevAccelerate caching. */
+DaApplicationContext.SetupConfiguration<CachingConfigurationSection>("daCachingConfiguration", configurationSource);
+/* Setup the configuration for DevAccelerate exception handling. */
+DaApplicationContext.SetupConfiguration<ExceptionHandlingConfigurationSection>("daExceptionHandlingConfiguration", configurationSource);
+/* Setup the configuration for DevAccelerate logging. */
+DaApplicationContext.SetupConfiguration<LoggingConfigurationSection>("daLoggingConfiguration", configurationSource);
+</pre>
+        <p>You would need to bootstrap the Microsoft Enterprise Library in a similar fashion if you want to take advantage of the library as an underlying framework for logging and exception handling. If that is the case, you need to add the following code:</p>
+<pre>
+...
+using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
+using Microsoft.Practices.EnterpriseLibrary.ExceptionHandling;
+using Microsoft.Practices.EnterpriseLibrary.Data;
+using Microsoft.Practices.EnterpriseLibrary.Logging;
+...
+DatabaseFactory.SetDatabaseProviderFactory(new DatabaseProviderFactory());
+var mselConfig = ConfigurationSourceFactory.Create();
+var mselExPolFac = new ExceptionPolicyFactory(mselConfig);
+Logger.SetLogWriter(new LogWriterFactory(mselConfig).Create());
+ExceptionPolicy.SetExceptionManager(mselExPolFac.CreateManager());
+</pre>
+        <h2>Defining Configuration in the Web.config File</h2>
+        <p>
+            Before you can write the actual code for caching, logging, and exception handling, you need to define the basic configuration of DevAccelerate Core in the web.config file. Keep in mind, DevAccelerate especially the Core library is configuration-centric and you need to specify what implementation you want for which functionality. The following is example of how you would do it for caching, logging and exception handling:
+        </p>
+<pre>
+...
+&lt;configSections&gt;
+&lt;section name=”daCachingConfiguration” type=”Ejyle.DevAccelerate.Core.Caching.CachingConfigurationSection, Ejyle.DevAccelerate.Core” /&gt;
+&lt;section name=”daExceptionHandlingConfiguration” type=”Ejyle.DevAccelerate.Core.Exceptions.ExceptionHandlingConfigurationSection, Ejyle.DevAccelerate.Core” /&gt;
+&lt;section name=”daLoggingConfiguration” type=”Ejyle.DevAccelerate.Core.Logging.LoggingConfigurationSection, Ejyle.DevAccelerate.Core” /&gt;
+&lt;/configSections&gt;
+...
+&lt;daCachingConfiguration type="Ejyle.DevAccelerate.Core.Caching.DefaultCacheManager, Ejyle.DevAccelerate.Core" /&gt;
+
+&lt;!-- Implement MSEL plugins for exception handling and logging --&gt;
+&lt;daExceptionHandlingConfiguration type="Ejyle.DevAccelerate.Core.ExceptionHandling.Msel.MselExceptionManager, Ejyle.DevAccelerate.Core.ExceptionHandling.Msel" /&gt;
+&lt;daLoggingConfiguration type="Ejyle.DevAccelerate.Core.Logging.Msel.MselLogManager, Ejyle.DevAccelerate.Core.Logging.Msel" /&gt;
+...
+</pre>
+        <p>Writing configuration for Microsoft Enterprise Library components is relatively easier if you use its configuration tool (EntlibConfig.exe):</p>
+        <p>
+            <img style="border:solid 1px #ccc;" src="images/entlibconfig.png" />
+        </p>
+        <p>For a complete walkthrough of how to use the configuration tool, you should read through this article <a href="https://msdn.microsoft.com/en-in/library/ff664633(v=pandp.50).aspx" target="_blank">https://msdn.microsoft.com/en-in/library/ff664633(v=pandp.50).aspx</a>.</p>
+        <h2>Caching</h2>
+        <p>You can add an object of any type to cache along with a unique key. A key can be any arbitary string as long as its unique in the cache for a given object. Once you add an object to cache, you can retrieve it anytime after that.</p>
+        <p>In DevAccelerate Core, you create an instance of the <strong>ICacheManager</strong> type by calling the <strong>CreateCacheManager()</strong> method of the <strong>DaApplicationContext</strong> class. Once you have a cache manager object, you can call its members to work with the underlying caching framework.</p>
+        <h3>Add an Object to Cache</h3>
+        <p>You call the <strong>Add()</strong> method to add an object to the cache:</p>
+<pre>
+var employee = new Employee();
+...
+var cacheManager = DaApplicationContext.CreateCacheManager();
+cacheManager.Add("employee_" + employee.Id, employee);
+</pre>
+        <h3>Retrieve an Object from Cache</h3>
+        <p>You can call the <strong>GetData</strong> method to retrieve an object from cache:</p>
+<pre>
+var cacheManager = DaApplicationContext.CreateCacheManager();
+var employee = cacheManager.GetData("employee_" + employeeId));
+</pre>
+        <h3>Check if a Key Exists in Cache</h3>
+        <p>You can call the <strong>Contains</strong> method to check if a key exists in cache:</p>
+<pre>
+var cacheManager = DaApplicationContext.CreateCacheManager();
+if(cacheManager.Contains("employee_" + employeeId))
+{
+    // Do something
+}
+</pre>
+        <h3>Clear Cache</h3>
+        <p>You can call the <strong>Flush</strong> method to clear cache:</p>
+<pre>
+var cacheManager = DaApplicationContext.CreateCacheManager();
+cacheManager.Flush();
+</pre>
         <footer class="site-footer">
-            <span class="site-footer-owner"><a href="https://github.com/devaccelerate/core">DevAccelerate Core</a> is maintained by <a href="http://www.ejyle.com">Ejyle</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/devaccelerate/core">DevAccelerate Core</a> is maintained by <a href="http://www.ejyle.com">Ejyle</a>.</span>
         </footer>
     </section>
 </body>
