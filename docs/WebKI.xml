@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="DefaultCacheManager.Add Method " Url="html/e6cabedd-c0ea-ac0e-97ed-aa3a3612fe78.htm" />
+    <HelpKINode Title="ICacheManager.Add Method " Url="html/0eb1d706-58a2-12e6-00e8-f95a0b008742.htm" />
+    <HelpKINode Title="NamedConfigurationElementCollection(TNamedConfigurationElement).Add Method " Url="html/7bb7bdcf-febb-2675-b107-bf9005d11068.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CachingConfigurationSection class">
+    <HelpKINode Title="CachingConfigurationSection Class" Url="html/48a4db54-0f39-afbf-edef-9f83d39bed78.htm" />
+    <HelpKINode Title="about CachingConfigurationSection class" Url="html/48a4db54-0f39-afbf-edef-9f83d39bed78.htm" />
+    <HelpKINode Title="constructor" Url="html/55fe769b-8442-3170-0ca8-7bb073fabde7.htm" />
+    <HelpKINode Title="methods" Url="html/139fcd0f-9e62-194b-5086-4f535d4ba7a7.htm" />
+    <HelpKINode Title="properties" Url="html/6ad4b801-db0d-18a7-bdf5-a3f3d2959fde.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CachingConfigurationSection.CachingConfigurationSection constructor" Url="html/55fe769b-8442-3170-0ca8-7bb073fabde7.htm" />
+  <HelpKINode Title="CachingConfigurationSection.GetConfigurationSectionName method" Url="html/98b152b2-e164-5d97-d0a6-f117b47d5188.htm" />
+  <HelpKINode Title="Categories property">
+    <HelpKINode Title="ILogMessage.Categories Property " Url="html/59b75211-0a41-fd59-2ef1-ce661bd87bbb.htm" />
+    <HelpKINode Title="LogMessage.Categories Property " Url="html/559c9d6d-5aee-a464-5f49-fd12574a195c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Configuration property" Url="html/4ba5bc25-97d9-1f6b-0eff-28d8e21ebe62.htm" />
+  <HelpKINode Title="ConnectionString property">
+    <HelpKINode Title="DatabaseConfigurationElement.ConnectionString Property " Url="html/640d6d3e-94be-eb5a-371c-fb69d2b9224b.htm" />
+    <HelpKINode Title="IDatabaseContext.ConnectionString Property " Url="html/a175bffb-c07e-9060-2ad3-b745f4000126.htm" />
+    <HelpKINode Title="IDatebaseContext.ConnectionString Property " Url="html/2c65d370-fe3a-850c-4932-01363800c1b0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Contains method">
+    <HelpKINode Title="DefaultCacheManager.Contains Method " Url="html/db7efbfd-6892-64e5-fdad-d26546088701.htm" />
+    <HelpKINode Title="ICacheManager.Contains Method " Url="html/d0f4deb5-699e-6089-4f1a-c884d6a41c49.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Count property">
+    <HelpKINode Title="DefaultCacheManager.Count Property " Url="html/ea8d9e61-66ad-54e7-1bc3-43f9ec75c8eb.htm" />
+    <HelpKINode Title="ICacheManager.Count Property " Url="html/5ed76fff-8588-f245-075c-1a3dc309410a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateAsync method">
+    <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository).CreateAsync Method " Url="html/e21bbf17-885d-0a3b-6036-39999cdb7633.htm" />
+    <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity).CreateAsync Method " Url="html/5f94f42a-4d6e-ccb1-52cf-e98f65f7ecb3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateCacheManager method" Url="html/c6b4fe9f-f003-ef4c-3f09-e3f4255d346e.htm" />
+  <HelpKINode Title="CreateDatabaseContext method" Url="html/485d1a0d-1a7a-c96c-f311-38a3b0421b73.htm" />
+  <HelpKINode Title="CreatedBy property">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey).CreatedBy Property " Url="html/88c9d050-71af-0ca6-03db-3b431bdbca8e.htm" />
+    <HelpKINode Title="IEntity(TKey, TOptionalKey).CreatedBy Property " Url="html/a4bf0fa0-35c9-1c09-0c5f-9ec515ab8b1d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreatedDateUtc property">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey).CreatedDateUtc Property " Url="html/c01849d4-3511-68df-eadc-cd2750726859.htm" />
+    <HelpKINode Title="IEntity(TKey, TOptionalKey).CreatedDateUtc Property " Url="html/93b84a7c-60cf-d4ce-5f84-c22a9dc8db06.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CreateExceptionManager method" Url="html/63714829-7585-42d1-8f36-8df35827daf5.htm" />
+  <HelpKINode Title="CreateLogManager method" Url="html/d6ec10c1-5c25-e165-59bf-d58e5886bd9d.htm" />
+  <HelpKINode Title="CreateNewElement method">
+    <HelpKINode Title="DatabaseConfigurationElementCollection.CreateNewElement Method " Url="html/be4781a8-d3ed-f61d-d449-2ad066081ebb.htm" />
+    <HelpKINode Title="ExtendedPropertyConfigurationElementCollection.CreateNewElement Method " Url="html/697eb19a-5be1-fa48-2621-ba0d3b9cca54.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DaApplicationContext class">
+    <HelpKINode Title="DaApplicationContext Class" Url="html/232a3ddc-23db-87f5-450a-aeeaa054dd71.htm" />
+    <HelpKINode Title="about DaApplicationContext class" Url="html/232a3ddc-23db-87f5-450a-aeeaa054dd71.htm" />
+    <HelpKINode Title="constructor" Url="html/af183034-b5fe-7b0e-fa8d-2d569c6277fc.htm" />
+    <HelpKINode Title="methods" Url="html/b67a20ee-9be5-15dc-0954-acd21f77fc95.htm" />
+    <HelpKINode Title="properties" Url="html/5d0cff03-6c21-5650-45dc-bc1975e7d5d9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DaApplicationContext.CreateCacheManager method" Url="html/c6b4fe9f-f003-ef4c-3f09-e3f4255d346e.htm" />
+  <HelpKINode Title="DaApplicationContext.CreateDatabaseContext method" Url="html/485d1a0d-1a7a-c96c-f311-38a3b0421b73.htm" />
+  <HelpKINode Title="DaApplicationContext.CreateExceptionManager method" Url="html/63714829-7585-42d1-8f36-8df35827daf5.htm" />
+  <HelpKINode Title="DaApplicationContext.CreateLogManager method" Url="html/d6ec10c1-5c25-e165-59bf-d58e5886bd9d.htm" />
+  <HelpKINode Title="DaApplicationContext.DaApplicationContext constructor" Url="html/af183034-b5fe-7b0e-fa8d-2d569c6277fc.htm" />
+  <HelpKINode Title="DaApplicationContext.Extensions property" Url="html/be6258f4-af1b-36d3-8ece-110a7ed780fe.htm" />
+  <HelpKINode Title="DaApplicationContext.GetConfiguration(Of TConfigurationSection) method" Url="html/62443cdd-4a84-2971-261d-45e22c1b2755.htm" />
+  <HelpKINode Title="DaApplicationContext.GetConfiguration&lt;TConfigurationSection&gt; method" Url="html/62443cdd-4a84-2971-261d-45e22c1b2755.htm" />
+  <HelpKINode Title="DaApplicationContext.SetupConfiguration(Of TConfigurationSection) method" Url="html/b1e18492-d00e-b732-b570-60e393041918.htm" />
+  <HelpKINode Title="DaApplicationContext.SetupConfiguration&lt;TConfigurationSection&gt; method" Url="html/b1e18492-d00e-b732-b570-60e393041918.htm" />
+  <HelpKINode Title="DaApplicationContextExtensions class">
+    <HelpKINode Title="DaApplicationContextExtensions Class" Url="html/c420032a-fb6f-fee0-13cc-0ac5692a6f36.htm" />
+    <HelpKINode Title="about DaApplicationContextExtensions class" Url="html/c420032a-fb6f-fee0-13cc-0ac5692a6f36.htm" />
+    <HelpKINode Title="constructor" Url="html/11db1ef8-6136-dd9e-a287-ecbfca1811a9.htm" />
+    <HelpKINode Title="methods" Url="html/8868206a-cd11-d285-dc2a-cbb9e8078f75.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DaApplicationContextExtensions.DaApplicationContextExtensions constructor" Url="html/11db1ef8-6136-dd9e-a287-ecbfca1811a9.htm" />
+  <HelpKINode Title="DaConfigurationSection class">
+    <HelpKINode Title="DaConfigurationSection Class" Url="html/cf30d799-47d1-f716-0a46-3f84ea48ea4e.htm" />
+    <HelpKINode Title="about DaConfigurationSection class" Url="html/cf30d799-47d1-f716-0a46-3f84ea48ea4e.htm" />
+    <HelpKINode Title="constructor" Url="html/45da1095-67a9-a6f1-a4e2-73883f71e75c.htm" />
+    <HelpKINode Title="methods" Url="html/de3fcff9-0534-cef5-89c7-6219de644b51.htm" />
+    <HelpKINode Title="properties" Url="html/66c14424-9183-0588-764d-08720aee412c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DaConfigurationSection.DaConfigurationSection constructor" Url="html/45da1095-67a9-a6f1-a4e2-73883f71e75c.htm" />
+  <HelpKINode Title="DaConfigurationSection.GetConfigurationSectionName method" Url="html/b10aa8bd-d35c-5858-fc25-1ded4d4990fe.htm" />
+  <HelpKINode Title="DaConfigurationSection.GetProtectionProviderByName method" Url="html/65e027b0-1065-a300-5744-3db59ca5e49a.htm" />
+  <HelpKINode Title="DaConfigurationSection.GetSchema method" Url="html/4b5e1f83-de75-0731-5a84-7b60005002d6.htm" />
+  <HelpKINode Title="DaConfigurationSection.ReadXml method" Url="html/88fdf8bc-2bcc-27f3-d635-dc3b8e7f15a0.htm" />
+  <HelpKINode Title="DaConfigurationSection.WriteXml method" Url="html/3bb314d9-567b-23c0-bbf6-cfd9daca6cdb.htm" />
+  <HelpKINode Title="DatabaseConfigurationElement class">
+    <HelpKINode Title="DatabaseConfigurationElement Class" Url="html/c482bcd1-6ce4-87e8-5ee3-6da98c7b5d07.htm" />
+    <HelpKINode Title="about DatabaseConfigurationElement class" Url="html/c482bcd1-6ce4-87e8-5ee3-6da98c7b5d07.htm" />
+    <HelpKINode Title="constructor" Url="html/d3c4979f-ee9c-889d-e60f-16d2ff6e25dd.htm" />
+    <HelpKINode Title="methods" Url="html/f6261ccc-8a0c-bb8c-8433-f1308b232698.htm" />
+    <HelpKINode Title="properties" Url="html/24e46c73-cb61-02e5-2675-3ab4c992c380.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatabaseConfigurationElement.ConnectionString property" Url="html/640d6d3e-94be-eb5a-371c-fb69d2b9224b.htm" />
+  <HelpKINode Title="DatabaseConfigurationElement.DatabaseConfigurationElement constructor" Url="html/d3c4979f-ee9c-889d-e60f-16d2ff6e25dd.htm" />
+  <HelpKINode Title="DatabaseConfigurationElement.DatabaseContextType property" Url="html/736f62bd-7992-5b16-1650-41fb092ecc0b.htm" />
+  <HelpKINode Title="DatabaseConfigurationElementCollection class">
+    <HelpKINode Title="DatabaseConfigurationElementCollection Class" Url="html/9cb7fa27-7701-9ca6-cee6-184fd0cb0b7b.htm" />
+    <HelpKINode Title="about DatabaseConfigurationElementCollection class" Url="html/9cb7fa27-7701-9ca6-cee6-184fd0cb0b7b.htm" />
+    <HelpKINode Title="constructor" Url="html/5f1bf3f0-3992-3449-aa59-1764879dd763.htm" />
+    <HelpKINode Title="methods" Url="html/6689a27e-cda8-2036-61ee-17e263519d35.htm" />
+    <HelpKINode Title="properties" Url="html/ab9011a9-0e32-61b2-8c62-261c9348f86a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatabaseConfigurationElementCollection.CreateNewElement method" Url="html/be4781a8-d3ed-f61d-d449-2ad066081ebb.htm" />
+  <HelpKINode Title="DatabaseConfigurationElementCollection.DatabaseConfigurationElementCollection constructor" Url="html/5f1bf3f0-3992-3449-aa59-1764879dd763.htm" />
+  <HelpKINode Title="DatabaseConfigurationSection class">
+    <HelpKINode Title="DatabaseConfigurationSection Class" Url="html/adf0f7c0-e483-e06a-3aec-2f4d66e70321.htm" />
+    <HelpKINode Title="about DatabaseConfigurationSection class" Url="html/adf0f7c0-e483-e06a-3aec-2f4d66e70321.htm" />
+    <HelpKINode Title="constructor" Url="html/19fb4258-6e80-d9cc-af83-655f3c441f67.htm" />
+    <HelpKINode Title="methods" Url="html/6bd8c76e-3a5b-2782-5c8c-44c70812ea1f.htm" />
+    <HelpKINode Title="properties" Url="html/73abfc0f-57e5-0e0b-71d5-b62bbaaced14.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DatabaseConfigurationSection.DatabaseConfigurationSection constructor" Url="html/19fb4258-6e80-d9cc-af83-655f3c441f67.htm" />
+  <HelpKINode Title="DatabaseConfigurationSection.Databases property" Url="html/7c018c40-a602-34d6-87ce-3443a85d10ae.htm" />
+  <HelpKINode Title="DatabaseConfigurationSection.DefaultDatabase property" Url="html/de437a1c-c168-5d49-6304-34ee868704f0.htm" />
+  <HelpKINode Title="DatabaseConfigurationSection.GetConfigurationSectionName method" Url="html/0df65f84-2df4-b65c-8d60-48c6c8074847.htm" />
+  <HelpKINode Title="DatabaseConfigurationSection.GetDefaultDatabaseConfiguration method" Url="html/8b14fadf-463b-f2f1-4849-b3406a594696.htm" />
+  <HelpKINode Title="DatabaseContextType property" Url="html/736f62bd-7992-5b16-1650-41fb092ecc0b.htm" />
+  <HelpKINode Title="Databases property" Url="html/7c018c40-a602-34d6-87ce-3443a85d10ae.htm" />
+  <HelpKINode Title="Date property">
+    <HelpKINode Title="ILogMessage.Date Property " Url="html/5ba5aee3-1b90-2786-9c2c-1fc1a0e05a0e.htm" />
+    <HelpKINode Title="LogMessage.Date Property " Url="html/0da04a76-7e02-8264-cf33-6426ded3bb41.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultCacheManager class">
+    <HelpKINode Title="DefaultCacheManager Class" Url="html/940ac0f8-d20f-8876-d589-307348cfad39.htm" />
+    <HelpKINode Title="about DefaultCacheManager class" Url="html/940ac0f8-d20f-8876-d589-307348cfad39.htm" />
+    <HelpKINode Title="constructor" Url="html/43dac289-2372-32f2-2cae-fe37df509f5c.htm" />
+    <HelpKINode Title="methods" Url="html/f07ac756-46c3-fd62-8cc4-28957a94f44b.htm" />
+    <HelpKINode Title="properties" Url="html/ed956f98-3491-6985-9ac6-fed96df7de56.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultCacheManager.Add method" Url="html/e6cabedd-c0ea-ac0e-97ed-aa3a3612fe78.htm" />
+  <HelpKINode Title="DefaultCacheManager.Contains method" Url="html/db7efbfd-6892-64e5-fdad-d26546088701.htm" />
+  <HelpKINode Title="DefaultCacheManager.Count property" Url="html/ea8d9e61-66ad-54e7-1bc3-43f9ec75c8eb.htm" />
+  <HelpKINode Title="DefaultCacheManager.DefaultCacheManager constructor" Url="html/43dac289-2372-32f2-2cae-fe37df509f5c.htm" />
+  <HelpKINode Title="DefaultCacheManager.Flush method" Url="html/5b5a6d97-c652-a9e8-2f0b-be1e3284a0e8.htm" />
+  <HelpKINode Title="DefaultCacheManager.GetData method" Url="html/24bfa077-2541-1e1e-477c-2508f1f7f8c9.htm" />
+  <HelpKINode Title="DefaultConfigurationSource class">
+    <HelpKINode Title="DefaultConfigurationSource Class" Url="html/be8b1177-4da8-6e8f-6f50-46ac332655ed.htm" />
+    <HelpKINode Title="about DefaultConfigurationSource class" Url="html/be8b1177-4da8-6e8f-6f50-46ac332655ed.htm" />
+    <HelpKINode Title="constructor" Url="html/b9344a30-0bf9-ec6e-3495-ab942dc90748.htm" />
+    <HelpKINode Title="methods" Url="html/2b78df33-d8e8-8772-7cc7-424a01d4a0ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultConfigurationSource.DefaultConfigurationSource constructor" Url="html/b9344a30-0bf9-ec6e-3495-ab942dc90748.htm" />
+  <HelpKINode Title="DefaultConfigurationSource.GetConfigurationSection(Of T) method" Url="html/b6c84938-e606-c081-c95f-b2159662e452.htm" />
+  <HelpKINode Title="DefaultConfigurationSource.GetConfigurationSection&lt;T&gt; method" Url="html/b6c84938-e606-c081-c95f-b2159662e452.htm" />
+  <HelpKINode Title="DefaultConfigurationSource.Save method" Url="html/83cdf925-0d6b-d99a-6ff3-9e570a253fc1.htm" />
+  <HelpKINode Title="DefaultDatabase property" Url="html/de437a1c-c168-5d49-6304-34ee868704f0.htm" />
+  <HelpKINode Title="DefaultExceptionPolicy property" Url="html/34aff22f-a5dc-60ce-95e9-d4d3c34a08fa.htm" />
+  <HelpKINode Title="DeleteAsync method">
+    <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository).DeleteAsync Method " Url="html/6ea64a9c-44f6-7ffb-7163-4c0225936eed.htm" />
+    <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity).DeleteAsync Method " Url="html/0098551e-34e4-5c51-c7ee-ebd3208f49aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ejyle.DevAccelerate.Core namespace" Url="html/f8ff17ad-9af8-b4cc-e823-857ebc8132c2.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Caching namespace" Url="html/7aedf5c1-7ddc-721a-cb52-1cd580a560fe.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Caching.CachingConfigurationSection class" Url="html/48a4db54-0f39-afbf-edef-9f83d39bed78.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Caching.DefaultCacheManager class" Url="html/940ac0f8-d20f-8876-d589-307348cfad39.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Caching.ICacheManager interface" Url="html/3013c187-0b45-5de6-df47-f8fc3907646d.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration namespace" Url="html/e329cda0-09bc-9e9b-68b9-53b8fe86afc0.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.DaConfigurationSection class" Url="html/cf30d799-47d1-f716-0a46-3f84ea48ea4e.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.DefaultConfigurationSource class" Url="html/be8b1177-4da8-6e8f-6f50-46ac332655ed.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.ExtendedPropertyConfigurationElement class" Url="html/1b558c31-a95a-3b92-e9da-efda1cdaa4d5.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.ExtendedPropertyConfigurationElementCollection class" Url="html/44e06c70-fffb-805c-e015-3c4ca13d16a5.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.FileConfigurationSource class" Url="html/9042ecf7-112b-bf7b-133b-cb547cca9403.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.IConfigurationSource interface" Url="html/b404a92a-c908-2600-3482-4043e3a28af5.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.NamedConfigurationElement class" Url="html/845753cb-a7ce-3a88-a19a-515f9757cb05.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.NamedConfigurationElementCollection(Of TNamedConfigurationElement) class" Url="html/1194c6d0-aca6-3324-2006-d0b28f57fd3a.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt; class" Url="html/1194c6d0-aca6-3324-2006-d0b28f57fd3a.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Configuration.ProviderConfigurationSection class" Url="html/bda8c419-7802-4bc5-db46-4f42aeccb250.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.DaApplicationContext class" Url="html/232a3ddc-23db-87f5-450a-aeeaa054dd71.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.DaApplicationContextExtensions class" Url="html/c420032a-fb6f-fee0-13cc-0ac5692a6f36.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Data namespace" Url="html/c2373257-428d-6bbd-18e8-cb5cf75c955d.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Data.DatabaseConfigurationElement class" Url="html/c482bcd1-6ce4-87e8-5ee3-6da98c7b5d07.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Data.DatabaseConfigurationElementCollection class" Url="html/9cb7fa27-7701-9ca6-cee6-184fd0cb0b7b.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Data.DatabaseConfigurationSection class" Url="html/adf0f7c0-e483-e06a-3aec-2f4d66e70321.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Data.IDatabaseContext interface" Url="html/272f3f40-8f27-c295-feb1-a5a41f415804.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.EntityBase class" Url="html/a8dc4495-c83a-9aa0-24cc-3f5f8ac08b00.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.EntityBase(Of TKey, TOptionalKey) class" Url="html/768281fa-6daa-e538-11c2-bd006aca3359.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.EntityBase&lt;TKey, TOptionalKey&gt; class" Url="html/768281fa-6daa-e538-11c2-bd006aca3359.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository) class" Url="html/43a8f9bb-a721-0ee8-e40a-28953bc6ac29.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt; class" Url="html/43a8f9bb-a721-0ee8-e40a-28953bc6ac29.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Exceptions namespace" Url="html/34c922fd-0da9-78c5-652d-142f26626c1b.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Exceptions.ExceptionHandlingConfigurationSection class" Url="html/9dfe26a0-e1a4-067e-d028-a0c1bbe9029c.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Exceptions.IExceptionManager interface" Url="html/14977ce1-eb68-dece-b9df-694d2123aaf6.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IDatebaseContext interface" Url="html/d06e01b8-b4c0-17de-197f-73f633da2baa.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntity(Of TKey, TOptionalKey) interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntity&lt;TKey, TOptionalKey&gt; interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntityRepository(Of TKey, TOptionalKey, TEntity) interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt; interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging namespace" Url="html/e4ade9ef-abd8-2b8f-6040-5cd28b997bb9.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging.ILogManager interface" Url="html/194e26f8-d78a-4da3-9d03-143bc51b2efe.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging.ILogMessage interface" Url="html/8e2e82dc-579e-0618-993d-2b8df93660f7.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging.LoggingConfigurationSection class" Url="html/dcaf7126-943f-6a01-e661-5ed6b7f09d6e.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging.LogMessage class" Url="html/ba4c3322-84e8-7383-7efe-356a44d33f99.htm" />
+  <HelpKINode Title="EntityBase class">
+    <HelpKINode Title="EntityBase Class" Url="html/a8dc4495-c83a-9aa0-24cc-3f5f8ac08b00.htm" />
+    <HelpKINode Title="about EntityBase class" Url="html/a8dc4495-c83a-9aa0-24cc-3f5f8ac08b00.htm" />
+    <HelpKINode Title="constructor" Url="html/a26d54f1-e0c1-dce8-88ba-8c158e41dbe3.htm" />
+    <HelpKINode Title="methods" Url="html/938a575c-a3bd-efa5-7fc9-5a63251dac35.htm" />
+    <HelpKINode Title="properties" Url="html/faf2e95b-2d00-3021-ab00-e676447866c3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey) class">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey) Class" Url="html/768281fa-6daa-e538-11c2-bd006aca3359.htm" />
+    <HelpKINode Title="about EntityBase(Of TKey, TOptionalKey) class" Url="html/768281fa-6daa-e538-11c2-bd006aca3359.htm" />
+    <HelpKINode Title="constructor" Url="html/6b06194b-adf3-d38b-79f4-7a758b1e395e.htm" />
+    <HelpKINode Title="methods" Url="html/5a1fcc25-513d-9353-3884-98ef7561fd84.htm" />
+    <HelpKINode Title="properties" Url="html/2e270458-3d2d-cfe5-5ce3-cc8611ec2d14.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey).CreatedBy property" Url="html/88c9d050-71af-0ca6-03db-3b431bdbca8e.htm" />
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey).CreatedDateUtc property" Url="html/c01849d4-3511-68df-eadc-cd2750726859.htm" />
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey).EntityBase constructor" Url="html/6b06194b-adf3-d38b-79f4-7a758b1e395e.htm" />
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey).Id property" Url="html/748c30f9-5c49-a9bc-e16f-b02f2afe1e22.htm" />
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey).LastUpdatedBy property" Url="html/5ed14110-3bec-a767-808a-b563aa745e49.htm" />
+  <HelpKINode Title="EntityBase(Of TKey, TOptionalKey).LastUpdatedDateUtc property" Url="html/e27ec7f0-428c-1218-7f74-b76184ba5e3f.htm" />
+  <HelpKINode Title="EntityBase.EntityBase constructor" Url="html/a26d54f1-e0c1-dce8-88ba-8c158e41dbe3.htm" />
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt; class">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey) Class" Url="html/768281fa-6daa-e538-11c2-bd006aca3359.htm" />
+    <HelpKINode Title="about EntityBase&lt;TKey, TOptionalKey&gt; class" Url="html/768281fa-6daa-e538-11c2-bd006aca3359.htm" />
+    <HelpKINode Title="constructor" Url="html/6b06194b-adf3-d38b-79f4-7a758b1e395e.htm" />
+    <HelpKINode Title="methods" Url="html/5a1fcc25-513d-9353-3884-98ef7561fd84.htm" />
+    <HelpKINode Title="properties" Url="html/2e270458-3d2d-cfe5-5ce3-cc8611ec2d14.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt;.CreatedBy property" Url="html/88c9d050-71af-0ca6-03db-3b431bdbca8e.htm" />
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt;.CreatedDateUtc property" Url="html/c01849d4-3511-68df-eadc-cd2750726859.htm" />
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt;.EntityBase constructor" Url="html/6b06194b-adf3-d38b-79f4-7a758b1e395e.htm" />
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt;.Id property" Url="html/748c30f9-5c49-a9bc-e16f-b02f2afe1e22.htm" />
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt;.LastUpdatedBy property" Url="html/5ed14110-3bec-a767-808a-b563aa745e49.htm" />
+  <HelpKINode Title="EntityBase&lt;TKey, TOptionalKey&gt;.LastUpdatedDateUtc property" Url="html/e27ec7f0-428c-1218-7f74-b76184ba5e3f.htm" />
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository) class">
+    <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository) Class" Url="html/43a8f9bb-a721-0ee8-e40a-28953bc6ac29.htm" />
+    <HelpKINode Title="about EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository) class" Url="html/43a8f9bb-a721-0ee8-e40a-28953bc6ac29.htm" />
+    <HelpKINode Title="constructor" Url="html/4cb45f55-24ac-e041-aef9-d374f07a3e31.htm" />
+    <HelpKINode Title="methods" Url="html/5c614a67-4e1b-ebda-d432-1345a487809c.htm" />
+    <HelpKINode Title="properties" Url="html/1f8cf5ab-4163-bf3c-05dc-4cb58e59eca5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository).CreateAsync method" Url="html/e21bbf17-885d-0a3b-6036-39999cdb7633.htm" />
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository).DeleteAsync method" Url="html/6ea64a9c-44f6-7ffb-7163-4c0225936eed.htm" />
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository).EntityManagerBase constructor" Url="html/4cb45f55-24ac-e041-aef9-d374f07a3e31.htm" />
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository).FindByIdAsync method" Url="html/fa27b045-95cd-6a92-ff99-1b8aea16bbb9.htm" />
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository).Repository property" Url="html/97907b3e-6ce6-0dd7-1a19-efdde6c38e54.htm" />
+  <HelpKINode Title="EntityManagerBase(Of TKey, TOptionalKey, TEntity, TRepository).UpdateAsync method" Url="html/c7d77cdc-c7e0-615a-0971-72081e56c9aa.htm" />
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt; class">
+    <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository) Class" Url="html/43a8f9bb-a721-0ee8-e40a-28953bc6ac29.htm" />
+    <HelpKINode Title="about EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt; class" Url="html/43a8f9bb-a721-0ee8-e40a-28953bc6ac29.htm" />
+    <HelpKINode Title="constructor" Url="html/4cb45f55-24ac-e041-aef9-d374f07a3e31.htm" />
+    <HelpKINode Title="methods" Url="html/5c614a67-4e1b-ebda-d432-1345a487809c.htm" />
+    <HelpKINode Title="properties" Url="html/1f8cf5ab-4163-bf3c-05dc-4cb58e59eca5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt;.CreateAsync method" Url="html/e21bbf17-885d-0a3b-6036-39999cdb7633.htm" />
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt;.DeleteAsync method" Url="html/6ea64a9c-44f6-7ffb-7163-4c0225936eed.htm" />
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt;.EntityManagerBase constructor" Url="html/4cb45f55-24ac-e041-aef9-d374f07a3e31.htm" />
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt;.FindByIdAsync method" Url="html/fa27b045-95cd-6a92-ff99-1b8aea16bbb9.htm" />
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt;.Repository property" Url="html/97907b3e-6ce6-0dd7-1a19-efdde6c38e54.htm" />
+  <HelpKINode Title="EntityManagerBase&lt;TKey, TOptionalKey, TEntity, TRepository&gt;.UpdateAsync method" Url="html/c7d77cdc-c7e0-615a-0971-72081e56c9aa.htm" />
+  <HelpKINode Title="ExceptionHandlingConfigurationSection class">
+    <HelpKINode Title="ExceptionHandlingConfigurationSection Class" Url="html/9dfe26a0-e1a4-067e-d028-a0c1bbe9029c.htm" />
+    <HelpKINode Title="about ExceptionHandlingConfigurationSection class" Url="html/9dfe26a0-e1a4-067e-d028-a0c1bbe9029c.htm" />
+    <HelpKINode Title="constructor" Url="html/6aa1e170-8bfa-45ea-96a7-404b5a94c414.htm" />
+    <HelpKINode Title="methods" Url="html/ddd982b2-aed1-b445-0463-dda94f783dbd.htm" />
+    <HelpKINode Title="properties" Url="html/e2bc2611-3b50-83b9-ce5e-1716c196fc0f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExceptionHandlingConfigurationSection.DefaultExceptionPolicy property" Url="html/34aff22f-a5dc-60ce-95e9-d4d3c34a08fa.htm" />
+  <HelpKINode Title="ExceptionHandlingConfigurationSection.ExceptionHandlingConfigurationSection constructor" Url="html/6aa1e170-8bfa-45ea-96a7-404b5a94c414.htm" />
+  <HelpKINode Title="ExceptionHandlingConfigurationSection.GetConfigurationSectionName method" Url="html/c53cc5e3-8daf-8456-cc49-83dc37f9d35a.htm" />
+  <HelpKINode Title="ExtendedProperties property" Url="html/cc8c3881-8e8b-a3ea-48ee-a84d8be7b049.htm" />
+  <HelpKINode Title="ExtendedPropertyConfigurationElement class">
+    <HelpKINode Title="ExtendedPropertyConfigurationElement Class" Url="html/1b558c31-a95a-3b92-e9da-efda1cdaa4d5.htm" />
+    <HelpKINode Title="about ExtendedPropertyConfigurationElement class" Url="html/1b558c31-a95a-3b92-e9da-efda1cdaa4d5.htm" />
+    <HelpKINode Title="constructor" Url="html/356fb9e7-c3b6-735a-c0ee-d9dc020ac490.htm" />
+    <HelpKINode Title="methods" Url="html/ef8899a2-2b8a-3175-c2a9-3deeb1025852.htm" />
+    <HelpKINode Title="properties" Url="html/47b1f19b-8e37-49bc-6848-eeba64fc03ca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExtendedPropertyConfigurationElement.ExtendedPropertyConfigurationElement constructor" Url="html/356fb9e7-c3b6-735a-c0ee-d9dc020ac490.htm" />
+  <HelpKINode Title="ExtendedPropertyConfigurationElement.Value property" Url="html/e643907b-fd99-5198-6264-14cc28e960d8.htm" />
+  <HelpKINode Title="ExtendedPropertyConfigurationElementCollection class">
+    <HelpKINode Title="ExtendedPropertyConfigurationElementCollection Class" Url="html/44e06c70-fffb-805c-e015-3c4ca13d16a5.htm" />
+    <HelpKINode Title="about ExtendedPropertyConfigurationElementCollection class" Url="html/44e06c70-fffb-805c-e015-3c4ca13d16a5.htm" />
+    <HelpKINode Title="constructor" Url="html/69e28d37-a4ff-7ee6-819b-70ae0a97314a.htm" />
+    <HelpKINode Title="methods" Url="html/929bc505-6b2f-d678-2d23-53560628fa8e.htm" />
+    <HelpKINode Title="properties" Url="html/6029afa9-dc62-86cf-090e-3a3448283bb1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExtendedPropertyConfigurationElementCollection.CreateNewElement method" Url="html/697eb19a-5be1-fa48-2621-ba0d3b9cca54.htm" />
+  <HelpKINode Title="ExtendedPropertyConfigurationElementCollection.ExtendedPropertyConfigurationElementCollection constructor" Url="html/69e28d37-a4ff-7ee6-819b-70ae0a97314a.htm" />
+  <HelpKINode Title="Extensions property" Url="html/be6258f4-af1b-36d3-8ece-110a7ed780fe.htm" />
+  <HelpKINode Title="FileConfigurationSource class">
+    <HelpKINode Title="FileConfigurationSource Class" Url="html/9042ecf7-112b-bf7b-133b-cb547cca9403.htm" />
+    <HelpKINode Title="about FileConfigurationSource class" Url="html/9042ecf7-112b-bf7b-133b-cb547cca9403.htm" />
+    <HelpKINode Title="constructor" Url="html/1f7abcda-372b-07c9-74ec-31bf8cd1d28a.htm" />
+    <HelpKINode Title="methods" Url="html/c26307bd-ba6e-b444-09b1-20d47b72fb9e.htm" />
+    <HelpKINode Title="properties" Url="html/0497c8a0-b241-4c7d-c25a-452c30118f71.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileConfigurationSource.Configuration property" Url="html/4ba5bc25-97d9-1f6b-0eff-28d8e21ebe62.htm" />
+  <HelpKINode Title="FileConfigurationSource.FileConfigurationSource constructor" Url="html/1f7abcda-372b-07c9-74ec-31bf8cd1d28a.htm" />
+  <HelpKINode Title="FileConfigurationSource.GetConfigurationSection(Of T) method" Url="html/afcd09a0-69b9-52fe-b3c5-9cbc450addfb.htm" />
+  <HelpKINode Title="FileConfigurationSource.GetConfigurationSection&lt;T&gt; method" Url="html/afcd09a0-69b9-52fe-b3c5-9cbc450addfb.htm" />
+  <HelpKINode Title="FileConfigurationSource.Save method" Url="html/0f0204f2-28cf-7f33-ebe9-891ba1dc3149.htm" />
+  <HelpKINode Title="FindByIdAsync method">
+    <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository).FindByIdAsync Method " Url="html/fa27b045-95cd-6a92-ff99-1b8aea16bbb9.htm" />
+    <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity).FindByIdAsync Method " Url="html/4f678fa2-7b32-98c3-bc1a-8d689ae95bf8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Flush method">
+    <HelpKINode Title="DefaultCacheManager.Flush Method " Url="html/5b5a6d97-c652-a9e8-2f0b-be1e3284a0e8.htm" />
+    <HelpKINode Title="ICacheManager.Flush Method " Url="html/c63dd7c1-93fe-29db-50ca-4ac5260342bd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetByName method" Url="html/a7f5363f-50d1-82df-5909-a6f0de4a2ac4.htm" />
+  <HelpKINode Title="GetConfiguration(Of TConfigurationSection) method" Url="html/62443cdd-4a84-2971-261d-45e22c1b2755.htm" />
+  <HelpKINode Title="GetConfiguration&lt;TConfigurationSection&gt; method" Url="html/62443cdd-4a84-2971-261d-45e22c1b2755.htm" />
+  <HelpKINode Title="GetConfigurationSection(Of T) method">
+    <HelpKINode Title="DefaultConfigurationSource.GetConfigurationSection(T) Method " Url="html/b6c84938-e606-c081-c95f-b2159662e452.htm" />
+    <HelpKINode Title="FileConfigurationSource.GetConfigurationSection(T) Method " Url="html/afcd09a0-69b9-52fe-b3c5-9cbc450addfb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetConfigurationSection(Of TConfigurationSection) method" Url="html/9da12f54-ba79-0404-f663-457550c65a6f.htm" />
+  <HelpKINode Title="GetConfigurationSection&lt;T&gt; method">
+    <HelpKINode Title="DefaultConfigurationSource.GetConfigurationSection(T) Method " Url="html/b6c84938-e606-c081-c95f-b2159662e452.htm" />
+    <HelpKINode Title="FileConfigurationSource.GetConfigurationSection(T) Method " Url="html/afcd09a0-69b9-52fe-b3c5-9cbc450addfb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetConfigurationSection&lt;TConfigurationSection&gt; method" Url="html/9da12f54-ba79-0404-f663-457550c65a6f.htm" />
+  <HelpKINode Title="GetConfigurationSectionName method">
+    <HelpKINode Title="CachingConfigurationSection.GetConfigurationSectionName Method " Url="html/98b152b2-e164-5d97-d0a6-f117b47d5188.htm" />
+    <HelpKINode Title="DaConfigurationSection.GetConfigurationSectionName Method " Url="html/b10aa8bd-d35c-5858-fc25-1ded4d4990fe.htm" />
+    <HelpKINode Title="DatabaseConfigurationSection.GetConfigurationSectionName Method " Url="html/0df65f84-2df4-b65c-8d60-48c6c8074847.htm" />
+    <HelpKINode Title="ExceptionHandlingConfigurationSection.GetConfigurationSectionName Method " Url="html/c53cc5e3-8daf-8456-cc49-83dc37f9d35a.htm" />
+    <HelpKINode Title="LoggingConfigurationSection.GetConfigurationSectionName Method " Url="html/8aa9ef1f-6fea-1cc4-7d93-ae149f5d48be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetData method">
+    <HelpKINode Title="DefaultCacheManager.GetData Method " Url="html/24bfa077-2541-1e1e-477c-2508f1f7f8c9.htm" />
+    <HelpKINode Title="ICacheManager.GetData Method " Url="html/f564859c-a4ea-49aa-cef3-12edc6c1a1b7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetDefaultDatabaseConfiguration method" Url="html/8b14fadf-463b-f2f1-4849-b3406a594696.htm" />
+  <HelpKINode Title="GetElementKey method" Url="html/1ea927af-11bd-2aec-446d-11b3ed210df8.htm" />
+  <HelpKINode Title="GetProtectionProviderByName method" Url="html/65e027b0-1065-a300-5744-3db59ca5e49a.htm" />
+  <HelpKINode Title="GetSchema method" Url="html/4b5e1f83-de75-0731-5a84-7b60005002d6.htm" />
+  <HelpKINode Title="HandleExpcetion method" Url="html/3c650792-692e-2599-c090-8cc02374c509.htm" />
+  <HelpKINode Title="ICacheManager interface">
+    <HelpKINode Title="ICacheManager Interface" Url="html/3013c187-0b45-5de6-df47-f8fc3907646d.htm" />
+    <HelpKINode Title="about ICacheManager interface" Url="html/3013c187-0b45-5de6-df47-f8fc3907646d.htm" />
+    <HelpKINode Title="methods" Url="html/14a31681-072e-7751-e7a9-64bce883b2d7.htm" />
+    <HelpKINode Title="properties" Url="html/df264517-b4b1-6a2a-c10f-915199fe90ec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICacheManager.Add method" Url="html/0eb1d706-58a2-12e6-00e8-f95a0b008742.htm" />
+  <HelpKINode Title="ICacheManager.Contains method" Url="html/d0f4deb5-699e-6089-4f1a-c884d6a41c49.htm" />
+  <HelpKINode Title="ICacheManager.Count property" Url="html/5ed76fff-8588-f245-075c-1a3dc309410a.htm" />
+  <HelpKINode Title="ICacheManager.Flush method" Url="html/c63dd7c1-93fe-29db-50ca-4ac5260342bd.htm" />
+  <HelpKINode Title="ICacheManager.GetData method" Url="html/f564859c-a4ea-49aa-cef3-12edc6c1a1b7.htm" />
+  <HelpKINode Title="IConfigurationSource interface">
+    <HelpKINode Title="IConfigurationSource Interface" Url="html/b404a92a-c908-2600-3482-4043e3a28af5.htm" />
+    <HelpKINode Title="about IConfigurationSource interface" Url="html/b404a92a-c908-2600-3482-4043e3a28af5.htm" />
+    <HelpKINode Title="methods" Url="html/0891232e-f4e9-6c8e-8737-c897110f0ce0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IConfigurationSource.GetConfigurationSection(Of TConfigurationSection) method" Url="html/9da12f54-ba79-0404-f663-457550c65a6f.htm" />
+  <HelpKINode Title="IConfigurationSource.GetConfigurationSection&lt;TConfigurationSection&gt; method" Url="html/9da12f54-ba79-0404-f663-457550c65a6f.htm" />
+  <HelpKINode Title="IConfigurationSource.Save method" Url="html/a886ca3b-d3c2-173e-14c6-4d07fa6f6dea.htm" />
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey).Id Property " Url="html/748c30f9-5c49-a9bc-e16f-b02f2afe1e22.htm" />
+    <HelpKINode Title="IEntity(TKey, TOptionalKey).Id Property " Url="html/7bd2177c-42fe-4339-ab9e-97f940cd4388.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDatabaseContext interface">
+    <HelpKINode Title="IDatabaseContext Interface" Url="html/272f3f40-8f27-c295-feb1-a5a41f415804.htm" />
+    <HelpKINode Title="about IDatabaseContext interface" Url="html/272f3f40-8f27-c295-feb1-a5a41f415804.htm" />
+    <HelpKINode Title="methods" Url="html/5eb20981-4bb1-6129-a02f-edb26ea4b1a1.htm" />
+    <HelpKINode Title="properties" Url="html/0498c0aa-c486-7141-6e5b-a8c2c04664e8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDatabaseContext.ConnectionString property" Url="html/a175bffb-c07e-9060-2ad3-b745f4000126.htm" />
+  <HelpKINode Title="IDatebaseContext interface">
+    <HelpKINode Title="IDatebaseContext Interface" Url="html/d06e01b8-b4c0-17de-197f-73f633da2baa.htm" />
+    <HelpKINode Title="about IDatebaseContext interface" Url="html/d06e01b8-b4c0-17de-197f-73f633da2baa.htm" />
+    <HelpKINode Title="methods" Url="html/c0950f06-0242-083a-caa6-6fd8ba6ea623.htm" />
+    <HelpKINode Title="properties" Url="html/4dc11b3e-8b73-ea7c-6c28-ae8eb670667d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IDatebaseContext.ConnectionString property" Url="html/2c65d370-fe3a-850c-4932-01363800c1b0.htm" />
+  <HelpKINode Title="IEntity(Of TKey, TOptionalKey) interface">
+    <HelpKINode Title="IEntity(TKey, TOptionalKey) Interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
+    <HelpKINode Title="about IEntity(Of TKey, TOptionalKey) interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
+    <HelpKINode Title="properties" Url="html/a0ad4be7-20ce-2a5f-187c-091400e58e42.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEntity(Of TKey, TOptionalKey).CreatedBy property" Url="html/a4bf0fa0-35c9-1c09-0c5f-9ec515ab8b1d.htm" />
+  <HelpKINode Title="IEntity(Of TKey, TOptionalKey).CreatedDateUtc property" Url="html/93b84a7c-60cf-d4ce-5f84-c22a9dc8db06.htm" />
+  <HelpKINode Title="IEntity(Of TKey, TOptionalKey).Id property" Url="html/7bd2177c-42fe-4339-ab9e-97f940cd4388.htm" />
+  <HelpKINode Title="IEntity(Of TKey, TOptionalKey).LastUpdatedBy property" Url="html/4372699d-78ba-953d-806a-2985228569f0.htm" />
+  <HelpKINode Title="IEntity(Of TKey, TOptionalKey).LastUpdatedDateUtc property" Url="html/51334117-a791-6d72-a898-7fa8c5bd2a58.htm" />
+  <HelpKINode Title="IEntity&lt;TKey, TOptionalKey&gt; interface">
+    <HelpKINode Title="IEntity(TKey, TOptionalKey) Interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
+    <HelpKINode Title="about IEntity&lt;TKey, TOptionalKey&gt; interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
+    <HelpKINode Title="properties" Url="html/a0ad4be7-20ce-2a5f-187c-091400e58e42.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEntity&lt;TKey, TOptionalKey&gt;.CreatedBy property" Url="html/a4bf0fa0-35c9-1c09-0c5f-9ec515ab8b1d.htm" />
+  <HelpKINode Title="IEntity&lt;TKey, TOptionalKey&gt;.CreatedDateUtc property" Url="html/93b84a7c-60cf-d4ce-5f84-c22a9dc8db06.htm" />
+  <HelpKINode Title="IEntity&lt;TKey, TOptionalKey&gt;.Id property" Url="html/7bd2177c-42fe-4339-ab9e-97f940cd4388.htm" />
+  <HelpKINode Title="IEntity&lt;TKey, TOptionalKey&gt;.LastUpdatedBy property" Url="html/4372699d-78ba-953d-806a-2985228569f0.htm" />
+  <HelpKINode Title="IEntity&lt;TKey, TOptionalKey&gt;.LastUpdatedDateUtc property" Url="html/51334117-a791-6d72-a898-7fa8c5bd2a58.htm" />
+  <HelpKINode Title="IEntityRepository(Of TKey, TOptionalKey, TEntity) interface">
+    <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity) Interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+    <HelpKINode Title="about IEntityRepository(Of TKey, TOptionalKey, TEntity) interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+    <HelpKINode Title="methods" Url="html/b3aa22b5-218e-579a-401b-a6c47da3858b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEntityRepository(Of TKey, TOptionalKey, TEntity).CreateAsync method" Url="html/5f94f42a-4d6e-ccb1-52cf-e98f65f7ecb3.htm" />
+  <HelpKINode Title="IEntityRepository(Of TKey, TOptionalKey, TEntity).DeleteAsync method" Url="html/0098551e-34e4-5c51-c7ee-ebd3208f49aa.htm" />
+  <HelpKINode Title="IEntityRepository(Of TKey, TOptionalKey, TEntity).FindByIdAsync method" Url="html/4f678fa2-7b32-98c3-bc1a-8d689ae95bf8.htm" />
+  <HelpKINode Title="IEntityRepository(Of TKey, TOptionalKey, TEntity).UpdateAsync method" Url="html/fe4ac81c-aff9-11ac-0e2e-e11c1deb90da.htm" />
+  <HelpKINode Title="IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt; interface">
+    <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity) Interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+    <HelpKINode Title="about IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt; interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+    <HelpKINode Title="methods" Url="html/b3aa22b5-218e-579a-401b-a6c47da3858b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt;.CreateAsync method" Url="html/5f94f42a-4d6e-ccb1-52cf-e98f65f7ecb3.htm" />
+  <HelpKINode Title="IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt;.DeleteAsync method" Url="html/0098551e-34e4-5c51-c7ee-ebd3208f49aa.htm" />
+  <HelpKINode Title="IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt;.FindByIdAsync method" Url="html/4f678fa2-7b32-98c3-bc1a-8d689ae95bf8.htm" />
+  <HelpKINode Title="IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt;.UpdateAsync method" Url="html/fe4ac81c-aff9-11ac-0e2e-e11c1deb90da.htm" />
+  <HelpKINode Title="IExceptionManager interface">
+    <HelpKINode Title="IExceptionManager Interface" Url="html/14977ce1-eb68-dece-b9df-694d2123aaf6.htm" />
+    <HelpKINode Title="about IExceptionManager interface" Url="html/14977ce1-eb68-dece-b9df-694d2123aaf6.htm" />
+    <HelpKINode Title="methods" Url="html/9f22754a-7c7a-f874-6159-3fae8f37d26b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IExceptionManager.HandleExpcetion method" Url="html/3c650792-692e-2599-c090-8cc02374c509.htm" />
+  <HelpKINode Title="ILogManager interface">
+    <HelpKINode Title="ILogManager Interface" Url="html/194e26f8-d78a-4da3-9d03-143bc51b2efe.htm" />
+    <HelpKINode Title="about ILogManager interface" Url="html/194e26f8-d78a-4da3-9d03-143bc51b2efe.htm" />
+    <HelpKINode Title="methods" Url="html/8893dc59-68ca-c228-ff0d-f9cf9e9ede55.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ILogManager.Write method" Url="html/df83d4bb-b4bf-e125-f323-cdaa6217be35.htm" />
+  <HelpKINode Title="ILogMessage interface">
+    <HelpKINode Title="ILogMessage Interface" Url="html/8e2e82dc-579e-0618-993d-2b8df93660f7.htm" />
+    <HelpKINode Title="about ILogMessage interface" Url="html/8e2e82dc-579e-0618-993d-2b8df93660f7.htm" />
+    <HelpKINode Title="properties" Url="html/b66f336e-5e3f-e025-8094-115ff25236d5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ILogMessage.Categories property" Url="html/59b75211-0a41-fd59-2ef1-ce661bd87bbb.htm" />
+  <HelpKINode Title="ILogMessage.Date property" Url="html/5ba5aee3-1b90-2786-9c2c-1fc1a0e05a0e.htm" />
+  <HelpKINode Title="ILogMessage.Priority property" Url="html/c2315e27-94c8-3bdc-1b4d-550b7841ddd8.htm" />
+  <HelpKINode Title="ILogMessage.Text property" Url="html/e6fa0654-5a7b-bba5-71e5-a0301527bc31.htm" />
+  <HelpKINode Title="ILogMessage.Title property" Url="html/9b8db762-532a-0cb0-0342-a38ab39833c7.htm" />
+  <HelpKINode Title="LastUpdatedBy property">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey).LastUpdatedBy Property " Url="html/5ed14110-3bec-a767-808a-b563aa745e49.htm" />
+    <HelpKINode Title="IEntity(TKey, TOptionalKey).LastUpdatedBy Property " Url="html/4372699d-78ba-953d-806a-2985228569f0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LastUpdatedDateUtc property">
+    <HelpKINode Title="EntityBase(TKey, TOptionalKey).LastUpdatedDateUtc Property " Url="html/e27ec7f0-428c-1218-7f74-b76184ba5e3f.htm" />
+    <HelpKINode Title="IEntity(TKey, TOptionalKey).LastUpdatedDateUtc Property " Url="html/51334117-a791-6d72-a898-7fa8c5bd2a58.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoggingConfigurationSection class">
+    <HelpKINode Title="LoggingConfigurationSection Class" Url="html/dcaf7126-943f-6a01-e661-5ed6b7f09d6e.htm" />
+    <HelpKINode Title="about LoggingConfigurationSection class" Url="html/dcaf7126-943f-6a01-e661-5ed6b7f09d6e.htm" />
+    <HelpKINode Title="constructor" Url="html/91a4b844-b63a-4bf9-673c-2aa1330e3665.htm" />
+    <HelpKINode Title="methods" Url="html/e254704a-0edd-8a0b-b8a3-8fde0ef214ca.htm" />
+    <HelpKINode Title="properties" Url="html/80611954-d816-449f-227a-d45063fc9adf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoggingConfigurationSection.GetConfigurationSectionName method" Url="html/8aa9ef1f-6fea-1cc4-7d93-ae149f5d48be.htm" />
+  <HelpKINode Title="LoggingConfigurationSection.LoggingConfigurationSection constructor" Url="html/91a4b844-b63a-4bf9-673c-2aa1330e3665.htm" />
+  <HelpKINode Title="LogMessage class">
+    <HelpKINode Title="LogMessage Class" Url="html/ba4c3322-84e8-7383-7efe-356a44d33f99.htm" />
+    <HelpKINode Title="about LogMessage class" Url="html/ba4c3322-84e8-7383-7efe-356a44d33f99.htm" />
+    <HelpKINode Title="constructor" Url="html/9488efda-1a38-b5ce-fc37-ce6abb56689c.htm" />
+    <HelpKINode Title="methods" Url="html/4b6bef0e-9d08-2818-e308-a20d9dae1f00.htm" />
+    <HelpKINode Title="properties" Url="html/57dd7ebd-e505-22dc-e968-bfb8244999a7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LogMessage.Categories property" Url="html/559c9d6d-5aee-a464-5f49-fd12574a195c.htm" />
+  <HelpKINode Title="LogMessage.Date property" Url="html/0da04a76-7e02-8264-cf33-6426ded3bb41.htm" />
+  <HelpKINode Title="LogMessage.LogMessage constructor" Url="html/9488efda-1a38-b5ce-fc37-ce6abb56689c.htm" />
+  <HelpKINode Title="LogMessage.Priority property" Url="html/0fa213ed-4f85-7764-5a8b-052663379bd4.htm" />
+  <HelpKINode Title="LogMessage.Text property" Url="html/b2b2aa88-4052-bb9f-cc61-7783dbf3b67b.htm" />
+  <HelpKINode Title="LogMessage.Title property" Url="html/c18e3cc2-0ac8-80af-e4e7-be696cd47d55.htm" />
+  <HelpKINode Title="Name property" Url="html/8d433554-759b-d531-9199-4146af5854c3.htm" />
+  <HelpKINode Title="NamedConfigurationElement class">
+    <HelpKINode Title="NamedConfigurationElement Class" Url="html/845753cb-a7ce-3a88-a19a-515f9757cb05.htm" />
+    <HelpKINode Title="about NamedConfigurationElement class" Url="html/845753cb-a7ce-3a88-a19a-515f9757cb05.htm" />
+    <HelpKINode Title="constructor" Url="html/62d65955-ee43-80e9-6775-103e2cf36181.htm" />
+    <HelpKINode Title="methods" Url="html/e7819d9d-ead8-5ab6-da74-c6b8eb517999.htm" />
+    <HelpKINode Title="properties" Url="html/5e89ef7b-ed11-c93b-efa5-76dd5115ca40.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NamedConfigurationElement.Name property" Url="html/8d433554-759b-d531-9199-4146af5854c3.htm" />
+  <HelpKINode Title="NamedConfigurationElement.NamedConfigurationElement constructor" Url="html/62d65955-ee43-80e9-6775-103e2cf36181.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement) class">
+    <HelpKINode Title="NamedConfigurationElementCollection(TNamedConfigurationElement) Class" Url="html/1194c6d0-aca6-3324-2006-d0b28f57fd3a.htm" />
+    <HelpKINode Title="about NamedConfigurationElementCollection(Of TNamedConfigurationElement) class" Url="html/1194c6d0-aca6-3324-2006-d0b28f57fd3a.htm" />
+    <HelpKINode Title="constructor" Url="html/4a8d6b7c-c700-7535-4fc2-ed2379791c71.htm" />
+    <HelpKINode Title="methods" Url="html/91edd440-2dc3-db3f-a8b7-13b0234fb250.htm" />
+    <HelpKINode Title="properties" Url="html/b901de91-c06a-9d75-dd55-c484d312b387.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement).Add method" Url="html/7bb7bdcf-febb-2675-b107-bf9005d11068.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement).GetByName method" Url="html/a7f5363f-50d1-82df-5909-a6f0de4a2ac4.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement).GetElementKey method" Url="html/1ea927af-11bd-2aec-446d-11b3ed210df8.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement).NamedConfigurationElementCollection constructor" Url="html/4a8d6b7c-c700-7535-4fc2-ed2379791c71.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement).Remove method" Url="html/5a49eb0d-cfda-6c55-67a6-dd6df082f662.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection(Of TNamedConfigurationElement).RemoveAt method" Url="html/bcd9b12a-d8e4-b734-cb2d-be8e44bddc90.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt; class">
+    <HelpKINode Title="NamedConfigurationElementCollection(TNamedConfigurationElement) Class" Url="html/1194c6d0-aca6-3324-2006-d0b28f57fd3a.htm" />
+    <HelpKINode Title="about NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt; class" Url="html/1194c6d0-aca6-3324-2006-d0b28f57fd3a.htm" />
+    <HelpKINode Title="constructor" Url="html/4a8d6b7c-c700-7535-4fc2-ed2379791c71.htm" />
+    <HelpKINode Title="methods" Url="html/91edd440-2dc3-db3f-a8b7-13b0234fb250.htm" />
+    <HelpKINode Title="properties" Url="html/b901de91-c06a-9d75-dd55-c484d312b387.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt;.Add method" Url="html/7bb7bdcf-febb-2675-b107-bf9005d11068.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt;.GetByName method" Url="html/a7f5363f-50d1-82df-5909-a6f0de4a2ac4.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt;.GetElementKey method" Url="html/1ea927af-11bd-2aec-446d-11b3ed210df8.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt;.NamedConfigurationElementCollection constructor" Url="html/4a8d6b7c-c700-7535-4fc2-ed2379791c71.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt;.Remove method" Url="html/5a49eb0d-cfda-6c55-67a6-dd6df082f662.htm" />
+  <HelpKINode Title="NamedConfigurationElementCollection&lt;TNamedConfigurationElement&gt;.RemoveAt method" Url="html/bcd9b12a-d8e4-b734-cb2d-be8e44bddc90.htm" />
+  <HelpKINode Title="Priority property">
+    <HelpKINode Title="ILogMessage.Priority Property " Url="html/c2315e27-94c8-3bdc-1b4d-550b7841ddd8.htm" />
+    <HelpKINode Title="LogMessage.Priority Property " Url="html/0fa213ed-4f85-7764-5a8b-052663379bd4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProviderConfigurationSection class">
+    <HelpKINode Title="ProviderConfigurationSection Class" Url="html/bda8c419-7802-4bc5-db46-4f42aeccb250.htm" />
+    <HelpKINode Title="about ProviderConfigurationSection class" Url="html/bda8c419-7802-4bc5-db46-4f42aeccb250.htm" />
+    <HelpKINode Title="constructor" Url="html/6ff085b4-2265-96a6-1952-780a2163cf18.htm" />
+    <HelpKINode Title="methods" Url="html/1fb22310-b2fb-35c3-081e-89262278e957.htm" />
+    <HelpKINode Title="properties" Url="html/1046489c-e166-dab8-c256-1b360056ee43.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProviderConfigurationSection.ExtendedProperties property" Url="html/cc8c3881-8e8b-a3ea-48ee-a84d8be7b049.htm" />
+  <HelpKINode Title="ProviderConfigurationSection.ProviderConfigurationSection constructor" Url="html/6ff085b4-2265-96a6-1952-780a2163cf18.htm" />
+  <HelpKINode Title="ProviderConfigurationSection.Type property" Url="html/23feeeb1-95b8-9323-99c5-f078030c27b8.htm" />
+  <HelpKINode Title="ReadXml method" Url="html/88fdf8bc-2bcc-27f3-d635-dc3b8e7f15a0.htm" />
+  <HelpKINode Title="Remove method" Url="html/5a49eb0d-cfda-6c55-67a6-dd6df082f662.htm" />
+  <HelpKINode Title="RemoveAt method" Url="html/bcd9b12a-d8e4-b734-cb2d-be8e44bddc90.htm" />
+  <HelpKINode Title="Repository property" Url="html/97907b3e-6ce6-0dd7-1a19-efdde6c38e54.htm" />
+  <HelpKINode Title="Save method">
+    <HelpKINode Title="DefaultConfigurationSource.Save Method " Url="html/83cdf925-0d6b-d99a-6ff3-9e570a253fc1.htm" />
+    <HelpKINode Title="FileConfigurationSource.Save Method " Url="html/0f0204f2-28cf-7f33-ebe9-891ba1dc3149.htm" />
+    <HelpKINode Title="IConfigurationSource.Save Method " Url="html/a886ca3b-d3c2-173e-14c6-4d07fa6f6dea.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetupConfiguration(Of TConfigurationSection) method" Url="html/b1e18492-d00e-b732-b570-60e393041918.htm" />
+  <HelpKINode Title="SetupConfiguration&lt;TConfigurationSection&gt; method" Url="html/b1e18492-d00e-b732-b570-60e393041918.htm" />
+  <HelpKINode Title="Text property">
+    <HelpKINode Title="ILogMessage.Text Property " Url="html/e6fa0654-5a7b-bba5-71e5-a0301527bc31.htm" />
+    <HelpKINode Title="LogMessage.Text Property " Url="html/b2b2aa88-4052-bb9f-cc61-7783dbf3b67b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Title property">
+    <HelpKINode Title="ILogMessage.Title Property " Url="html/9b8db762-532a-0cb0-0342-a38ab39833c7.htm" />
+    <HelpKINode Title="LogMessage.Title Property " Url="html/c18e3cc2-0ac8-80af-e4e7-be696cd47d55.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Type property" Url="html/23feeeb1-95b8-9323-99c5-f078030c27b8.htm" />
+  <HelpKINode Title="UpdateAsync method">
+    <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository).UpdateAsync Method " Url="html/c7d77cdc-c7e0-615a-0971-72081e56c9aa.htm" />
+    <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity).UpdateAsync Method " Url="html/fe4ac81c-aff9-11ac-0e2e-e11c1deb90da.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Value property" Url="html/e643907b-fd99-5198-6264-14cc28e960d8.htm" />
+  <HelpKINode Title="Write method" Url="html/df83d4bb-b4bf-e125-f323-cdaa6217be35.htm" />
+  <HelpKINode Title="WriteXml method" Url="html/3bb314d9-567b-23c0-bbf6-cfd9daca6cdb.htm" />
+</HelpKI>
