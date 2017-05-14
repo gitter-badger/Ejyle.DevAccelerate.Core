@@ -73,6 +73,8 @@
     <Compile Include="IDatebaseContext.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IEntityRepository.cs" />
+    <Compile Include="IValidationResult.cs" />
+    <Compile Include="IValidator.cs" />
     <Compile Include="Logging\ILogMessage.cs" />
     <Compile Include="Logging\ILogManager.cs" />
     <Compile Include="Logging\LogMessage.cs" />
