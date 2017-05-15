@@ -191,6 +191,9 @@
   <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntity&lt;TKey, TOptionalKey&gt; interface" Url="html/632ce650-f6a5-74cf-6ede-08dd16d06e9b.htm" />
   <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntityRepository(Of TKey, TOptionalKey, TEntity) interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
   <HelpKINode Title="Ejyle.DevAccelerate.Core.IEntityRepository&lt;TKey, TOptionalKey, TEntity&gt; interface" Url="html/ae962614-9107-4863-fedb-d297fee9e4b6.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IValidationResult interface" Url="html/470d0171-1fca-6e60-4071-e6d9a2970582.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IValidator(Of TValidationResult, TValue) interface" Url="html/64602bbe-1571-300a-8827-e81aabd3ba67.htm" />
+  <HelpKINode Title="Ejyle.DevAccelerate.Core.IValidator&lt;TValidationResult, TValue&gt; interface" Url="html/64602bbe-1571-300a-8827-e81aabd3ba67.htm" />
   <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging namespace" Url="html/e4ade9ef-abd8-2b8f-6040-5cd28b997bb9.htm" />
   <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging.ILogManager interface" Url="html/194e26f8-d78a-4da3-9d03-143bc51b2efe.htm" />
   <HelpKINode Title="Ejyle.DevAccelerate.Core.Logging.ILogMessage interface" Url="html/8e2e82dc-579e-0618-993d-2b8df93660f7.htm" />
@@ -432,6 +435,25 @@
   <HelpKINode Title="ILogMessage.Priority property" Url="html/c2315e27-94c8-3bdc-1b4d-550b7841ddd8.htm" />
   <HelpKINode Title="ILogMessage.Text property" Url="html/e6fa0654-5a7b-bba5-71e5-a0301527bc31.htm" />
   <HelpKINode Title="ILogMessage.Title property" Url="html/9b8db762-532a-0cb0-0342-a38ab39833c7.htm" />
+  <HelpKINode Title="IsSuccessful property" Url="html/4aa02610-9df3-3c4f-fbd9-53e34f039107.htm" />
+  <HelpKINode Title="IValidationResult interface">
+    <HelpKINode Title="IValidationResult Interface" Url="html/470d0171-1fca-6e60-4071-e6d9a2970582.htm" />
+    <HelpKINode Title="about IValidationResult interface" Url="html/470d0171-1fca-6e60-4071-e6d9a2970582.htm" />
+    <HelpKINode Title="properties" Url="html/c675c3c3-bb0a-1c7e-2d18-00f7659e76b1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IValidationResult.IsSuccessful property" Url="html/4aa02610-9df3-3c4f-fbd9-53e34f039107.htm" />
+  <HelpKINode Title="IValidator(Of TValidationResult, TValue) interface">
+    <HelpKINode Title="IValidator(TValidationResult, TValue) Interface" Url="html/64602bbe-1571-300a-8827-e81aabd3ba67.htm" />
+    <HelpKINode Title="about IValidator(Of TValidationResult, TValue) interface" Url="html/64602bbe-1571-300a-8827-e81aabd3ba67.htm" />
+    <HelpKINode Title="methods" Url="html/f0955a72-46b7-3d7a-440f-24bf5820bc6e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IValidator(Of TValidationResult, TValue).Validate method" Url="html/34426db0-ced1-91e4-0537-73f4e45a9ea9.htm" />
+  <HelpKINode Title="IValidator&lt;TValidationResult, TValue&gt; interface">
+    <HelpKINode Title="IValidator(TValidationResult, TValue) Interface" Url="html/64602bbe-1571-300a-8827-e81aabd3ba67.htm" />
+    <HelpKINode Title="about IValidator&lt;TValidationResult, TValue&gt; interface" Url="html/64602bbe-1571-300a-8827-e81aabd3ba67.htm" />
+    <HelpKINode Title="methods" Url="html/f0955a72-46b7-3d7a-440f-24bf5820bc6e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IValidator&lt;TValidationResult, TValue&gt;.Validate method" Url="html/34426db0-ced1-91e4-0537-73f4e45a9ea9.htm" />
   <HelpKINode Title="LastUpdatedBy property">
     <HelpKINode Title="EntityBase(TKey, TOptionalKey).LastUpdatedBy Property " Url="html/5ed14110-3bec-a767-808a-b563aa745e49.htm" />
     <HelpKINode Title="IEntity(TKey, TOptionalKey).LastUpdatedBy Property " Url="html/4372699d-78ba-953d-806a-2985228569f0.htm" />
@@ -536,6 +558,7 @@
     <HelpKINode Title="EntityManagerBase(TKey, TOptionalKey, TEntity, TRepository).UpdateAsync Method " Url="html/c7d77cdc-c7e0-615a-0971-72081e56c9aa.htm" />
     <HelpKINode Title="IEntityRepository(TKey, TOptionalKey, TEntity).UpdateAsync Method " Url="html/fe4ac81c-aff9-11ac-0e2e-e11c1deb90da.htm" />
   </HelpKINode>
+  <HelpKINode Title="Validate method" Url="html/34426db0-ced1-91e4-0537-73f4e45a9ea9.htm" />
   <HelpKINode Title="Value property" Url="html/e643907b-fd99-5198-6264-14cc28e960d8.htm" />
   <HelpKINode Title="Write method" Url="html/df83d4bb-b4bf-e125-f323-cdaa6217be35.htm" />
   <HelpKINode Title="WriteXml method" Url="html/3bb314d9-567b-23c0-bbf6-cfd9daca6cdb.htm" />
