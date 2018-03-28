@@ -61,24 +61,12 @@
     <Compile Include="Configuration\NamedConfigurationElementCollection.cs" />
     <Compile Include="Configuration\ProviderConfigurationSection.cs" />
     <Compile Include="DaApplicationContext.cs" />
-    <Compile Include="DaApplicationContextExtensions.cs" />
-    <Compile Include="Data\DatabaseConfigurationElement.cs" />
-    <Compile Include="Data\DatabaseConfigurationElementCollection.cs" />
-    <Compile Include="Data\DatabaseConfigurationSection.cs" />
-    <Compile Include="Data\IDatabaseContext.cs" />
-    <Compile Include="EntityBase.cs" />
-    <Compile Include="EntityManagerBase.cs" />
     <Compile Include="Exceptions\ExceptionHandlingConfigurationSection.cs" />
     <Compile Include="Exceptions\IExceptionManager.cs" />
-    <Compile Include="IDatebaseContext.cs" />
-    <Compile Include="IEntity.cs" />
-    <Compile Include="IEntityRepository.cs" />
-    <Compile Include="IValidationResult.cs" />
-    <Compile Include="IValidator.cs" />
-    <Compile Include="Logging\ILogMessage.cs" />
     <Compile Include="Logging\ILogManager.cs" />
-    <Compile Include="Logging\LogMessage.cs" />
+    <Compile Include="Logging\ILogMessage.cs" />
     <Compile Include="Logging\LoggingConfigurationSection.cs" />
+    <Compile Include="Logging\LogMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

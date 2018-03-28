@@ -9,7 +9,6 @@ using Ejyle.DevAccelerate.Core.Caching;
 using Ejyle.DevAccelerate.Core.Exceptions;
 using Ejyle.DevAccelerate.Core.Logging;
 using Ejyle.DevAccelerate.Core.Configuration;
-using Ejyle.DevAccelerate.Core.Data;
 
 namespace Ejyle.DevAccelerate.Core
 {
@@ -19,7 +18,6 @@ namespace Ejyle.DevAccelerate.Core
     public sealed class DaApplicationContext
     {
         private static Dictionary<string, DaConfigurationSection> _Settings = new Dictionary<string, DaConfigurationSection>();
-        private static DaApplicationContextExtensions _Extensions;
 
         /// <summary>
         /// Sets up configuration from a configuration source.
@@ -174,64 +172,6 @@ namespace Ejyle.DevAccelerate.Core
             var exceptionManager = (IExceptionManager)Activator.CreateInstance(type);
 
             return exceptionManager;
-        }
-
-        /// <summary>
-        /// Creates an instance of a database context.
-        /// </summary>
-        /// <typeparam name="TDatabaseContext">The type of the database context.</typeparam>
-        /// <returns>Returns an instance of the TDatabaseContext type that implements the <see cref="IDatebaseContext"/> interface.</returns>
-        public static TDatabaseContext CreateDatabaseContext<TDatabaseContext>()
-            where TDatabaseContext : IDatebaseContext
-        {
-            var databaseConfiguration = GetConfiguration<DatabaseConfigurationSection>("daDatabaseConfiguration");
-
-            if(databaseConfiguration == null)
-            {
-                throw new InvalidOperationException("Database configuration has not been set up and therefore database context cannot be created.");
-            }
-
-            Type type = Type.GetType(databaseConfiguration.Databases.GetByName(databaseConfiguration.DefaultDatabase).DatabaseContextType);
-            var context = (TDatabaseContext)Activator.CreateInstance(type);
-            context.ConnectionString = databaseConfiguration.GetDefaultDatabaseConfiguration().ConnectionString;
-            
-            return context;
-        }
-
-        /// <summary>
-        /// Creates an instance of a database context.
-        /// </summary>
-        /// <returns>Returns an instance of the the <see cref="IDatebaseContext"/> type.</returns>
-        public static IDatabaseContext CreateDatabaseContext()
-        {
-            var databaseConfiguration = GetConfiguration<DatabaseConfigurationSection>("daDatabaseConfiguration");
-
-            if (databaseConfiguration == null)
-            {
-                throw new InvalidOperationException("Database configuration has not been set up and therefore database context cannot be created.");
-            }
-
-            Type type = Type.GetType(databaseConfiguration.Databases.GetByName(databaseConfiguration.DefaultDatabase).DatabaseContextType);
-            var context = (IDatabaseContext)Activator.CreateInstance(type);
-            context.ConnectionString = databaseConfiguration.GetDefaultDatabaseConfiguration().ConnectionString;
-
-            return context;
-        }
-
-        /// <summary>
-        /// Gets an instance of the DaApplicationContextExtensions class. The purpose of the class is to let other developers to add extension methods to the <see cref="DaApplicationContext"/> class.
-        /// </summary>
-        public static DaApplicationContextExtensions Extensions
-        {
-            get
-            {
-                if(_Extensions == null)
-                {
-                    _Extensions = new DaApplicationContextExtensions();
-                }
-
-                return _Extensions;
-            }
         }
     }
 }
