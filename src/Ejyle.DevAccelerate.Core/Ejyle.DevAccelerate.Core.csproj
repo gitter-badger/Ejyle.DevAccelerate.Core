@@ -52,6 +52,7 @@
     <Compile Include="Caching\DefaultCacheManager.cs" />
     <Compile Include="Caching\ICacheManager.cs" />
     <Compile Include="Configuration\DaConfigurationSection.cs" />
+    <Compile Include="Configuration\DaProviderConfigurationSection.cs" />
     <Compile Include="Configuration\DefaultConfigurationSource.cs" />
     <Compile Include="Configuration\ExtendedPropertyConfigurationElement.cs" />
     <Compile Include="Configuration\ExtendedPropertyConfigurationElementCollection.cs" />
@@ -59,15 +60,37 @@
     <Compile Include="Configuration\IConfigurationSource.cs" />
     <Compile Include="Configuration\NamedConfigurationElement.cs" />
     <Compile Include="Configuration\NamedConfigurationElementCollection.cs" />
+    <Compile Include="Configuration\ProviderConfigurationElement.cs" />
+    <Compile Include="Configuration\ProviderConfigurationElementCollection.cs" />
     <Compile Include="Configuration\ProviderConfigurationSection.cs" />
     <Compile Include="DaApplicationContext.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="EntityManagerBase.cs" />
     <Compile Include="Exceptions\ExceptionHandlingConfigurationSection.cs" />
     <Compile Include="Exceptions\IExceptionManager.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IEntityManager.cs" />
+    <Compile Include="IEntityRepository.cs" />
     <Compile Include="Logging\ILogManager.cs" />
     <Compile Include="Logging\ILogMessage.cs" />
     <Compile Include="Logging\LoggingConfigurationSection.cs" />
     <Compile Include="Logging\LogMessage.cs" />
+    <Compile Include="Mail\DefaultMailProvider.cs" />
+    <Compile Include="Mail\IMailProvider.cs" />
+    <Compile Include="Mail\MailConfigurationManager.cs" />
+    <Compile Include="Mail\MailConfigurationSection.cs" />
+    <Compile Include="Mail\MailProviderBase.cs" />
+    <Compile Include="Mail\MailProviderConfigurationElement.cs" />
+    <Compile Include="Mail\MailProviderFactory.cs" />
+    <Compile Include="Mail\SmtpServerInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sms\ISmsProvider.cs" />
+    <Compile Include="Sms\SmsConfigurationManager.cs" />
+    <Compile Include="Sms\SmsConfigurationSection.cs" />
+    <Compile Include="Sms\SmsProviderBase.cs" />
+    <Compile Include="Sms\SmsProviderConfigurationElement.cs" />
+    <Compile Include="Sms\SmsProviderFactory.cs" />
+    <Compile Include="Sms\SmsProviderInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="da.ico" />

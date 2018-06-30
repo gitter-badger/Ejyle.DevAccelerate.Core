@@ -13,8 +13,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Ejyle.DevAccelerate.Core")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ejyle Technologies (P) Ltd")]
-[assembly: AssemblyProduct("DevAccelerate Core")]
-[assembly: AssemblyCopyright("Copyright © Ejyle Technologies (P) Ltd (www.ejyle.com)")]
+[assembly: AssemblyProduct("Ejyle.DevAccelerate.Core")]
+[assembly: AssemblyCopyright("© Ejyle Technologies (P) Ltd. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -36,5 +36,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.0.1.0")]
-[assembly: AssemblyFileVersion("3.0.1.0")]
+[assembly: AssemblyVersion("4.0.1.0")]
+[assembly: AssemblyFileVersion("4.0.1.0")]

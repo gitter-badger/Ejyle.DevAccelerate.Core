@@ -3,22 +3,24 @@
 // Licensed under the MIT license. See the LICENSE file in the project's root directory for complete license information.
 // ----------------------------------------------------------------------------------------------------------------------
 
-using Ejyle.DevAccelerate.Core.Configuration;
+using System;
 
-namespace Ejyle.DevAccelerate.Core.Caching
+namespace Ejyle.DevAccelerate.Core
 {
     /// <summary>
-    /// Represents the configuration section for caching.
+    /// Represents the basic interface for an entity.
     /// </summary>
-    public class CachingConfigurationSection : DaProviderConfigurationSection
+    /// <typeparam name="TKey">The type of the entity's ID.</typeparam>
+    public interface IEntity<TKey>
+        where TKey: IEquatable<TKey>
     {
         /// <summary>
-        /// Gets the name of the configuration section.
+        /// Gets or sets the unique ID of the entity.
         /// </summary>
-        /// <returns>Returns the name of the configuration section as a <see cref="string"/>.</returns>
-        public override string GetConfigurationSectionName()
+        TKey Id
         {
-            return "daCachingConfiguration";
+            get;
+            set;
         }
     }
 }
