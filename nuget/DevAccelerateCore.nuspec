@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DevAccelerateCore</id>
+    <version>4.0.1</version>
+    <title>DevAccelerate.Core</title>
+    <authors>Ejyle</authors>
+    <owners>ejyle,tanveery</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/devaccelerate/core/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/devaccelerate/core</projectUrl>
+    <iconUrl>http://www.ejyle.com/images/ico/da.png</iconUrl>
+    <description>DevAccelerate.Core is a DevAccelerate library that provides all the basic interfaces for the most common cross-cutting concerns such as configuration, caching, logging, exception handling, etc.</description>
+    <summary>DevAccelerate.Core is a DevAccelerate library that provides all the basic interfaces for the most common cross-cutting concerns.</summary>
+    <releaseNotes>v2.0.1
+1) Made the library more lightweight.
+2) Types related to files, mials, identity, and lists have been removed. They will be delivered as separate GitHub projects and Nuget packages.
+3) General optimization and bug fixes.
+
+v2.0.2
+1) Added general-purpose validation interfaces.
+
+v2.0.3
+1) Minor improvements.
+2) Changed target framework to .NET 4.7.1.
+
+v3.0.2
+1) Removed entity management classes and interfaces.
+2) Removed the empty DaApplicationContextExteions class.
+3) Optimized code.
+
+v4.0.0 &amp; v4.0.1
+1) Major update with 4.0 project release.
+2) Added mail provider interfaces and classes.
+3) Added Sms provider interfaces and classes.
+4) Optimized configuration classes.
+5) Added back entity management interfaces and classes.
+6) Shifted the project back to its dedicated GitHub repo.</releaseNotes>
+    <copyright>© Ejyle Technologies (P) Ltd. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>framework, caching, logging, exception-handling, configuration-management</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Runtime.Caching" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
