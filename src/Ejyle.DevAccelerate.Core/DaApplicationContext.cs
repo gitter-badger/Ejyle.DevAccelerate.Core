@@ -1,5 +1,7 @@
 ﻿// ----------------------------------------------------------------------------------------------------------------------
-// Copyright © Ejyle Technologies (P) Ltd (www.ejyle.com)
+// Author: Tanveer Yousuf (@tanveery)
+// ----------------------------------------------------------------------------------------------------------------------
+// Copyright © Ejyle Technologies (P) Ltd. All rights reserved.
 // Licensed under the MIT license. See the LICENSE file in the project's root directory for complete license information.
 // ----------------------------------------------------------------------------------------------------------------------
 
@@ -25,7 +27,7 @@ namespace Ejyle.DevAccelerate.Core
         /// <typeparam name="TConfigurationSection">The type of the configuration section.</typeparam>
         /// <param name="configurationName">The name of the configuration section.</param>
         /// <param name="configurationSource">The source of the configuration section.</param>
-        public static void SetupConfiguration<TConfigurationSection>(string configurationName, IConfigurationSource configurationSource)
+        public static void SetupConfiguration<TConfigurationSection>(string configurationName, IDaConfigurationSource configurationSource)
             where TConfigurationSection: DaConfigurationSection
         {
             if(string.IsNullOrEmpty(configurationName))
@@ -58,11 +60,11 @@ namespace Ejyle.DevAccelerate.Core
         /// Creates an intance of a cache manager.
         /// </summary>
         /// <typeparam name="TCacheManager">The type of the cache manager.</typeparam>
-        /// <returns>Returns an instance of the TCacheManager type that implements the <see cref="ICacheManager"/> interface.</returns>
+        /// <returns>Returns an instance of the TCacheManager type that implements the <see cref="IDaCacheManager"/> interface.</returns>
         public static TCacheManager CreateCacheManager<TCacheManager>()
-            where TCacheManager : ICacheManager
+            where TCacheManager : IDaCacheManager
         {
-            var cachingConfiguration = GetConfiguration<CachingConfigurationSection>("daCachingConfiguration");
+            var cachingConfiguration = GetConfiguration<DaCachingConfigurationSection>("daCachingConfiguration");
 
             if (cachingConfiguration == null)
             {
@@ -80,10 +82,10 @@ namespace Ejyle.DevAccelerate.Core
         /// <summary>
         /// Creates an intance of a cache manager.
         /// </summary>
-        /// <returns>Returns an instance of the <see cref="ICacheManager"/> type.</returns>
-        public static ICacheManager CreateCacheManager()
+        /// <returns>Returns an instance of the <see cref="IDaCacheManager"/> type.</returns>
+        public static IDaCacheManager CreateCacheManager()
         {
-            var cachingConfiguration = GetConfiguration<CachingConfigurationSection>("daCachingConfiguration");
+            var cachingConfiguration = GetConfiguration<DaCachingConfigurationSection>("daCachingConfiguration");
 
             if (cachingConfiguration == null)
             {
@@ -93,7 +95,7 @@ namespace Ejyle.DevAccelerate.Core
             var providerConfig = cachingConfiguration.Providers.GetByName(cachingConfiguration.DefaultProvider);
 
             Type type = Type.GetType(providerConfig.Type);
-            var cacheManager = (ICacheManager)Activator.CreateInstance(type);
+            var cacheManager = (IDaCacheManager)Activator.CreateInstance(type);
 
             return cacheManager;
         }
@@ -102,11 +104,11 @@ namespace Ejyle.DevAccelerate.Core
         /// Creates an instance of a log manager.
         /// </summary>
         /// <typeparam name="TLogManager">The type of the log manager.</typeparam>
-        /// <returns>Returns an instance of the TLogManager that implements the <see cref="ILogManager"/> interface.</returns>
+        /// <returns>Returns an instance of the TLogManager that implements the <see cref="IDaLogManager"/> interface.</returns>
         public static TLogManager CreateLogManager<TLogManager>()
-            where TLogManager : ILogManager
+            where TLogManager : IDaLogManager
         {
-            var loggingConfiguration = GetConfiguration<LoggingConfigurationSection>("daLoggingConfiguration");
+            var loggingConfiguration = GetConfiguration<DaLoggingConfigurationSection>("daLoggingConfiguration");
 
             if (loggingConfiguration == null)
             {
@@ -124,10 +126,10 @@ namespace Ejyle.DevAccelerate.Core
         /// <summary>
         /// Creates an instance of a log manager.
         /// </summary>
-        /// <returns>Returns an instance of the <see cref="ILogManager"/> type.</returns>
-        public static ILogManager CreateLogManager()
+        /// <returns>Returns an instance of the <see cref="IDaLogManager"/> type.</returns>
+        public static IDaLogManager CreateLogManager()
         {
-            var loggingConfiguration = GetConfiguration<LoggingConfigurationSection>("daLoggingConfiguration");
+            var loggingConfiguration = GetConfiguration<DaLoggingConfigurationSection>("daLoggingConfiguration");
 
             if (loggingConfiguration == null)
             {
@@ -137,7 +139,7 @@ namespace Ejyle.DevAccelerate.Core
             var providerConfig = loggingConfiguration.Providers.GetByName(loggingConfiguration.DefaultProvider);
 
             Type type = Type.GetType(providerConfig.Type);
-            var logManager = (ILogManager)Activator.CreateInstance(type);
+            var logManager = (IDaLogManager)Activator.CreateInstance(type);
 
             return logManager;
         }
@@ -146,11 +148,11 @@ namespace Ejyle.DevAccelerate.Core
         /// Creates an instance of a exception manager.
         /// </summary>
         /// <typeparam name="TExceptionManager">The type of the exception manager.</typeparam>
-        /// <returns>Returns an instance of the TExceptionManager type that implements the <see cref="IExceptionManager"/> interface.</returns>
+        /// <returns>Returns an instance of the TExceptionManager type that implements the <see cref="IDaExceptionManager"/> interface.</returns>
         public static TExceptionManager CreateExceptionManager<TExceptionManager>()
-            where TExceptionManager : IExceptionManager
+            where TExceptionManager : IDaExceptionManager
         {
-            var exceptionHandlingConfiguration = GetConfiguration<ExceptionHandlingConfigurationSection>("daExceptionHandlingConfiguration");
+            var exceptionHandlingConfiguration = GetConfiguration<DaExceptionHandlingConfigurationSection>("daExceptionHandlingConfiguration");
 
             if (exceptionHandlingConfiguration == null)
             {
@@ -168,10 +170,10 @@ namespace Ejyle.DevAccelerate.Core
         /// <summary>
         /// Creates an instance of a exception manager.
         /// </summary>
-        /// <returns>Returns an instance of the <see cref="IExceptionManager"/> interface.</returns>
-        public static IExceptionManager CreateExceptionManager()
+        /// <returns>Returns an instance of the <see cref="IDaExceptionManager"/> interface.</returns>
+        public static IDaExceptionManager CreateExceptionManager()
         {
-            var exceptionHandlingConfiguration = GetConfiguration<ExceptionHandlingConfigurationSection>("daExceptionHandlingConfiguration");
+            var exceptionHandlingConfiguration = GetConfiguration<DaExceptionHandlingConfigurationSection>("daExceptionHandlingConfiguration");
 
             if (exceptionHandlingConfiguration == null)
             {
@@ -181,7 +183,7 @@ namespace Ejyle.DevAccelerate.Core
             var providerConfig = exceptionHandlingConfiguration.Providers.GetByName(exceptionHandlingConfiguration.DefaultProvider);
 
             Type type = Type.GetType(providerConfig.Type);
-            var exceptionManager = (IExceptionManager)Activator.CreateInstance(type);
+            var exceptionManager = (IDaExceptionManager)Activator.CreateInstance(type);
 
             return exceptionManager;
         }
