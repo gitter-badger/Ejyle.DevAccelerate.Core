@@ -47,11 +47,11 @@ namespace Ejyle.DevAccelerate.Core.Configuration
         /// Gets or sets the collection of provider configurations.
         /// </summary>
         [ConfigurationProperty(PROVIDERS, IsRequired = false, DefaultValue = null)]
-        public ProviderConfigurationElementCollection<TProviderConfigurationElement> Providers
+        public DaProviderConfigurationElementCollection<TProviderConfigurationElement> Providers
         {
             get
             {
-                return this[PROVIDERS] as ProviderConfigurationElementCollection<TProviderConfigurationElement>;
+                return this[PROVIDERS] as DaProviderConfigurationElementCollection<TProviderConfigurationElement>;
             }
             set
             {

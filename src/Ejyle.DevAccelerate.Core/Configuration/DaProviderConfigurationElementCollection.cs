@@ -12,7 +12,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
     /// <summary>
     /// Represents the collection of provider configuration elements.
     /// </summary>
-    public class DaProviderConfigurationElementCollection : ProviderConfigurationElementCollection<DaProviderConfigurationElement>
+    public class DaProviderConfigurationElementCollection : DaProviderConfigurationElementCollection<DaProviderConfigurationElement>
     {
         /// <summary>
         /// Creates a new instance of <see cref="DaProviderConfigurationElement"/>.
@@ -28,7 +28,7 @@ namespace Ejyle.DevAccelerate.Core.Configuration
     /// Represents the collection of provider configuration elements.
     /// </summary>
     /// <typeparam name="TProviderConfigurationElement">The type of a provider configuration element.</typeparam>
-    public abstract class ProviderConfigurationElementCollection<TProviderConfigurationElement> : ConfigurationElementCollection
+    public abstract class DaProviderConfigurationElementCollection<TProviderConfigurationElement> : ConfigurationElementCollection
             where TProviderConfigurationElement : DaProviderConfigurationElement
     {
         /// <summary>

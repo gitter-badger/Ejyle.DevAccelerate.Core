@@ -13,14 +13,14 @@ namespace Ejyle.DevAccelerate.Core
     /// <summary>
     /// Represents the base class for an entity. The type of the entity ID is Integer.
     /// </summary>
-    public abstract class DaEntityBase : EntityBase<int>
+    public abstract class DaEntityBase : DaEntityBase<int>
     { }
 
     /// <summary>
     /// Represents the base class for an entity.
     /// </summary>
     /// <typeparam name="TKey">The type of the entity's ID.</typeparam>
-    public abstract class EntityBase<TKey> : IDaEntity<TKey>
+    public abstract class DaEntityBase<TKey> : IDaEntity<TKey>
         where TKey : IEquatable<TKey>
     {
         /// <summary>
