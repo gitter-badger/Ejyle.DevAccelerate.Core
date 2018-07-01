@@ -1,3 +1,6 @@
+
+[![Join the chat at https://gitter.im/devaccelerate/Ejyle.DevAccelerate.Core](https://badges.gitter.im/devaccelerate/Ejyle.DevAccelerate.Core.svg)](https://gitter.im/devaccelerate/Ejyle.DevAccelerate.Core?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <h1>Ejyle.DevAccelerate.Core</h1>
 
 <strong>Ejyle.DevAccelerate.Core</strong> is the core library of DevAccelerate. It provides all the basic interfaces for the most common cross-cutting concerns such as configuration, caching, logging, exception handling, and entity management. The usage of the library is governed by the terms and conditions of its <a href="https://github.com/devaccelerate/Ejyle.DevAccelerate.Core/blob/master/LICENSE">License</a>.
