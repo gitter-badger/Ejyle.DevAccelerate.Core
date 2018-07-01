@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Ejyle.DevAccelerate.Core</id>
+    <version>4.1.0-preview1</version>
+    <title>Ejyle.DevAccelerate.Core</title>
+    <authors>ejyle,tanveery</authors>
+    <owners>ejyle,tanveery</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/devaccelerate/Ejyle.DevAccelerate.Core/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/devaccelerate/Ejyle.DevAccelerate.Core</projectUrl>
+    <iconUrl>http://www.ejyle.com/images/ico/da.png</iconUrl>
+    <description>Ejyle.DevAccelerate.Core is a DevAccelerate library that provides all the basic interfaces for the most common cross-cutting concerns such as configuration, caching, logging, exception handling, and entity management.</description>
+    <summary>Ejyle.DevAccelerate.Core is a DevAccelerate library that provides all the basic interfaces for the most common cross-cutting concerns.</summary>
+    <releaseNotes>## Added
+1) Added back entity management interfaces and classes.
+
+## Modified
+1) Optimized configuration classes.</releaseNotes>
+    <copyright>© Ejyle Technologies (P) Ltd. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>framework, caching, logging, exception-handling, configuration-management</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Runtime.Caching" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
